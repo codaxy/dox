@@ -6,6 +6,6 @@ packages/*/
 Nuget/*.nupgk
 Nuget/*/lib
 ext
-Apps/Codaxy.Dox.Viewer/cache/*
+Apps/Codaxy.Dox.Viewer/cache/*.htm
 Apps/Codaxy.Dox.Viewer/client/lib/dextop/css/dextop-min.css
 Tools/dox/book/*
