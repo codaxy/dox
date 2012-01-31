@@ -38,6 +38,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -49,6 +50,7 @@
     <Compile Include="Database.cs" />
     <Compile Include="DoxDocument.cs" />
     <Compile Include="Formatters\StaticFormatter.cs" />
+    <Compile Include="HtmlBuilder.cs" />
     <Compile Include="IDoxBuilder.cs" />
     <Compile Include="IDoxFormatter.cs" />
     <Compile Include="IDoxProvider.cs" />

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Web.UI;
-using Codaxy.Common.Web.Html;
 using Codaxy.Dox.Formatters.SqlServer;
 
 namespace Codaxy.Dox.Formatters

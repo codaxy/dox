@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web.UI;
-using Codaxy.Common.Web.Html;
 using Codaxy.Dox.Formatters.CSharp;
 
 namespace Codaxy.Dox.Formatters

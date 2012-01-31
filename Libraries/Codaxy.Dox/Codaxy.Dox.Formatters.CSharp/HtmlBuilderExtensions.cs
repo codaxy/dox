@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using Codaxy.Common.Text;
-using Codaxy.Common.Web.Html;
 
 namespace Codaxy.Dox.Formatters.CSharp
 {
