@@ -1,0 +1,924 @@
+{
+  "FullName": "Codaxy.Dextop.Forms.DextopFormNumberFieldAttribute",
+  "Type": {
+    "BaseTypes": [
+      "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+      "System.Runtime.InteropServices._Attribute",
+      "Codaxy.Dextop.Forms.IDextopFormLabelable"
+    ],
+    "Namespace": "Codaxy.Dextop.Forms",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormNumberFieldAttribute",
+        "TypeName": null,
+        "Description": "\n            A number field.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "DextopFormNumberFieldAttribute",
+        "RefId": "#ctor()"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "Name of the member.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "memberName",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Type",
+            "Description": "The type of the member.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "memberType",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "",
+        "MemberFlag": 40,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormNumberFieldAttribute",
+        "TypeName": "Codaxy.Dextop.Forms.DextopFormField",
+        "Description": "\n            Converts this attribute to a form field.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "ToField",
+        "RefId": "ToField(System.String,System.Type)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "Name of the member.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "memberName",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Type",
+            "Description": "Type of the member.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "memberType",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "",
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "Codaxy.Dextop.Forms.DextopFormField[]",
+        "Description": "\n            Converts this attribute to a list of form fields. Usually attributes \n            are mapped to a single form field, but sometimes single attribute\n            is mapped to multiple fields (e.g. DextopFormRadio).\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "ToFields",
+        "RefId": "ToFields(System.String,System.Type)"
+      }
+    ],
+    "Parameters": null,
+    "Properties": [
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormNumberFieldAttribute",
+        "TypeName": "System.Double",
+        "Description": "\n            Specifies a numeric interval by which the field's value will be incremented or \n            decremented when the user invokes the spinner. Defaults to 1.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "step",
+        "RefId": "step"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormNumberFieldAttribute",
+        "TypeName": "System.Boolean",
+        "Description": "\n            False to disallow decimal values (defaults to true)\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "allowDecimals",
+        "RefId": "allowDecimals"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormNumberFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            The base set of characters to evaluate as valid \n            numbers (defaults to '0123456789').\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "baseChars",
+        "RefId": "baseChars"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormNumberFieldAttribute",
+        "TypeName": "System.Int32",
+        "Description": "\n            The maximum precision to display after the decimal separator (defaults to 2)\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "decimalPrecision",
+        "RefId": "decimalPrecision"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormNumberFieldAttribute",
+        "TypeName": "System.Int32",
+        "Description": "\n            The maximum allowed value (defaults to Number.MAX_VALUE). \n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "maxValue",
+        "RefId": "maxValue"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormNumberFieldAttribute",
+        "TypeName": "System.Int32",
+        "Description": "\n            The minimum allowed value (defaults to Number.NEGATIVE_INFINITY). \n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "minValue",
+        "RefId": "minValue"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.Int32",
+        "Description": "\n            Gets or sets the field order.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Order",
+        "RefId": "Order"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.Boolean",
+        "Description": "\n            Dummy fields are ignored.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Dummy",
+        "RefId": "Dummy"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            The field's HTML name attribute.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "name",
+        "RefId": "name"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            The registered xtype to create.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "xtype",
+        "RefId": "xtype"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            An optional text label that will appear next to the checkbox. Whether it appears before or after the checkbox is determined by the boxLabelAlign config (defaults to after).\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "boxLabel",
+        "RefId": "boxLabel"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            This value is what tells the layout how an item should be anchored to the container. \n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "anchor",
+        "RefId": "anchor"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            TODO: Missing Ext documentation. Not sure if supported.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "tooltip",
+        "RefId": "tooltip"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            The default text to place into an empty field (defaults to undefined).\n            Note that normally this value will be submitted to the server if this field is enabled; to prevent this you can set the submitEmptyText option of Ext.form.Basic.submit to false.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "emptyText",
+        "RefId": "emptyText"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.Boolean",
+        "Description": "\n            ReadOnly true to mark the field as readOnly in HTML.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "readOnly",
+        "RefId": "readOnly"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.Boolean",
+        "Description": "\n            Specify false to validate that the value's length is > 0 (defaults to true).\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "allowBlank",
+        "RefId": "allowBlank"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.Boolean",
+        "Description": "\n            True to disable the field (defaults to false). \n            Be aware that conformant with the HTML specification, disabled Fields will not be submitted.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "disabled",
+        "RefId": "disabled"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.Double",
+        "Description": "\n            This configuration option is to be applied to child items of the container managed by this layout. Each child item with a flex property will be flexed horizontally according to each item's relative flex value compared to the sum of all items with a flex value specified. \n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "flex",
+        "RefId": "flex"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            The type attribute for input fields -- e.g. radio, text, password, file (defaults to 'text'). The extended types supported by HTML5 inputs (url, email, etc.) may also be used, though using them will cause older browsers to fall back to 'text'.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "inputType",
+        "RefId": "inputType"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            A validation type name as defined in Ext.form.field.VTypes\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "vtype",
+        "RefId": "vtype"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            A custom error message to display in place of the default message provided for the vtype currently set for this field (defaults to undefined). Note: only applies if vtype is set, else ignored.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "vtypeText",
+        "RefId": "vtypeText"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            Specifies the margin for this component. The margin can be a single numeric value to apply to all sides or it can be a CSS style specification for each style, for example: '10 5 3 10'.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "margin",
+        "RefId": "margin"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.Boolean",
+        "Description": "\n            Set to true to completely hide the label element (fieldLabel and labelSeparator).\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "hideLabel",
+        "RefId": "hideLabel"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.Boolean",
+        "Description": "\n            When set to true, the label element (fieldLabel and labelSeparator) will be automatically hidden if the fieldLabel is empty. Setting this to false will cause the empty label element to be rendered and space to be reserved for it; this is useful if you want a field without a label to line up with other labeled fields in the same form.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "hideEmptyLabel",
+        "RefId": "hideEmptyLabel"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            The label for the field. It gets appended with the labelSeparator, and its position and sizing is determined by the labelAlign, labelWidth, and labelPad configs.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "fieldLabel",
+        "RefId": "fieldLabel"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            The CSS class to use when marking the component invalid (defaults to 'x-form-invalid')\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "invalidCls",
+        "RefId": "invalidCls"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            Controls the position and alignment of the fieldLabel. Valid values are:\n            - \"left\" (the default) - The label is positioned to the left of the field, with its text aligned to the left. Its width is determined by the labelWidth config.\n            - \"top\" - The label is positioned above the field.\n            - \"right\" - The label is positioned to the left of the field, with its text aligned to the right. Its width is determined by the labelWidth config.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "labelAlign",
+        "RefId": "labelAlign"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            The CSS class to be applied to the label element. Defaults to 'x-form-item-label'.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "labelCls",
+        "RefId": "labelCls"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.Int32",
+        "Description": "\n            The amount of space in pixels between the fieldLabel and the input field. Defaults to 5.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "labelPad",
+        "RefId": "labelPad"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            Character(s) to be inserted at the end of the label text.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "labelSeparator",
+        "RefId": "labelSeparator"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            A CSS style specification string to apply directly to this field's label.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "labelStyle",
+        "RefId": "labelStyle"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.Int32",
+        "Description": "\n            The width of the fieldLabel in pixels. Only applicable if the labelAlign is set to \"left\" or \"right\". Defaults to 100.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "labelWidth",
+        "RefId": "labelWidth"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            A custom style specification to be applied to this component.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "style",
+        "RefId": "style"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            Optional CSS style(s) to be applied to the field input element.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "fieldStyle",
+        "RefId": "fieldStyle"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            The default CSS class for the field input (defaults to 'x-form-field').\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "fieldCls",
+        "RefId": "fieldCls"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            An optional extra CSS class that will be added to this component.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "cls",
+        "RefId": "cls"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            The location where the error message text should display. Must be one of the following values:\n            - qtip - Display a quick tip containing the message when the user hovers over the field. This is the default.\n            Ext.tip.QuickTipManager.init must have been called for this setting to work.\n            - title - Display the message in a default browser title attribute popup.\n            under Add a block div beneath the field containing the error message.\n            - side - Add an error icon to the right of the field, displaying the message in a popup on hover.\n            - none - Don't display any error message. This might be useful if you are implementing custom error display.\n            - [element id] - Add the error message directly to the innerHTML of the specified element.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "msgTarget",
+        "RefId": "msgTarget"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.Boolean",
+        "Description": "\n            true to disable displaying any error message set on this object. Defaults to false.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "preventMark",
+        "RefId": "preventMark"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.Int32",
+        "Description": "\n            Width of the field.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "width",
+        "RefId": "width"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            Raw JS code to be injected in the field configuration.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "RawJS",
+        "RefId": "RawJS"
+      }
+    ],
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Forms.DextopFormNumberFieldAttribute",
+    "Description": "\n            A number field.\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopFormNumberFieldAttribute",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopFormNumberFieldAttribute",
+  "SearchItems": [
+    {
+      "SectionName": "DextopFormNumberFieldAttribute",
+      "SectionDescription": "\n            A number field.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "ToField",
+      "SectionDescription": "\n            Converts this attribute to a form field.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "ToFields",
+      "SectionDescription": "\n            Converts this attribute to a list of form fields. Usually attributes \n            are mapped to a single form field, but sometimes single attribute\n            is mapped to multiple fields (e.g. DextopFormRadio).\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "step",
+      "SectionDescription": "\n            Specifies a numeric interval by which the field's value will be incremented or \n            decremented when the user invokes the spinner. Defaults to 1.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "allowDecimals",
+      "SectionDescription": "\n            False to disallow decimal values (defaults to true)\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "baseChars",
+      "SectionDescription": "\n            The base set of characters to evaluate as valid \n            numbers (defaults to '0123456789').\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "decimalPrecision",
+      "SectionDescription": "\n            The maximum precision to display after the decimal separator (defaults to 2)\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "maxValue",
+      "SectionDescription": "\n            The maximum allowed value (defaults to Number.MAX_VALUE). \n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "minValue",
+      "SectionDescription": "\n            The minimum allowed value (defaults to Number.NEGATIVE_INFINITY). \n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "Order",
+      "SectionDescription": "\n            Gets or sets the field order.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "Dummy",
+      "SectionDescription": "\n            Dummy fields are ignored.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "name",
+      "SectionDescription": "\n            The field's HTML name attribute.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "xtype",
+      "SectionDescription": "\n            The registered xtype to create.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "boxLabel",
+      "SectionDescription": "\n            An optional text label that will appear next to the checkbox. Whether it appears before or after the checkbox is determined by the boxLabelAlign config (defaults to after).\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "anchor",
+      "SectionDescription": "\n            This value is what tells the layout how an item should be anchored to the container. \n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "tooltip",
+      "SectionDescription": "\n            TODO: Missing Ext documentation. Not sure if supported.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "emptyText",
+      "SectionDescription": "\n            The default text to place into an empty field (defaults to undefined).\n            Note that normally this value will be submitted to the server if this field is enabled; to prevent this you can set the submitEmptyText option of Ext.form.Basic.submit to false.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "readOnly",
+      "SectionDescription": "\n            ReadOnly true to mark the field as readOnly in HTML.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "allowBlank",
+      "SectionDescription": "\n            Specify false to validate that the value's length is > 0 (defaults to true).\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "disabled",
+      "SectionDescription": "\n            True to disable the field (defaults to false). \n            Be aware that conformant with the HTML specification, disabled Fields will not be submitted.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "flex",
+      "SectionDescription": "\n            This configuration option is to be applied to child items of the container managed by this layout. Each child item with a flex property will be flexed horizontally according to each item's relative flex value compared to the sum of all items with a flex value specified. \n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "inputType",
+      "SectionDescription": "\n            The type attribute for input fields -- e.g. radio, text, password, file (defaults to 'text'). The extended types supported by HTML5 inputs (url, email, etc.) may also be used, though using them will cause older browsers to fall back to 'text'.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "vtype",
+      "SectionDescription": "\n            A validation type name as defined in Ext.form.field.VTypes\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "vtypeText",
+      "SectionDescription": "\n            A custom error message to display in place of the default message provided for the vtype currently set for this field (defaults to undefined). Note: only applies if vtype is set, else ignored.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "margin",
+      "SectionDescription": "\n            Specifies the margin for this component. The margin can be a single numeric value to apply to all sides or it can be a CSS style specification for each style, for example: '10 5 3 10'.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "hideLabel",
+      "SectionDescription": "\n            Set to true to completely hide the label element (fieldLabel and labelSeparator).\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "hideEmptyLabel",
+      "SectionDescription": "\n            When set to true, the label element (fieldLabel and labelSeparator) will be automatically hidden if the fieldLabel is empty. Setting this to false will cause the empty label element to be rendered and space to be reserved for it; this is useful if you want a field without a label to line up with other labeled fields in the same form.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "fieldLabel",
+      "SectionDescription": "\n            The label for the field. It gets appended with the labelSeparator, and its position and sizing is determined by the labelAlign, labelWidth, and labelPad configs.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "invalidCls",
+      "SectionDescription": "\n            The CSS class to use when marking the component invalid (defaults to 'x-form-invalid')\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "labelAlign",
+      "SectionDescription": "\n            Controls the position and alignment of the fieldLabel. Valid values are:\n            - \"left\" (the default) - The label is positioned to the left of the field, with its text aligned to the left. Its width is determined by the labelWidth config.\n            - \"top\" - The label is positioned above the field.\n            - \"right\" - The label is positioned to the left of the field, with its text aligned to the right. Its width is determined by the labelWidth config.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "labelCls",
+      "SectionDescription": "\n            The CSS class to be applied to the label element. Defaults to 'x-form-item-label'.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "labelPad",
+      "SectionDescription": "\n            The amount of space in pixels between the fieldLabel and the input field. Defaults to 5.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "labelSeparator",
+      "SectionDescription": "\n            Character(s) to be inserted at the end of the label text.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "labelStyle",
+      "SectionDescription": "\n            A CSS style specification string to apply directly to this field's label.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "labelWidth",
+      "SectionDescription": "\n            The width of the fieldLabel in pixels. Only applicable if the labelAlign is set to \"left\" or \"right\". Defaults to 100.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "style",
+      "SectionDescription": "\n            A custom style specification to be applied to this component.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "fieldStyle",
+      "SectionDescription": "\n            Optional CSS style(s) to be applied to the field input element.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "fieldCls",
+      "SectionDescription": "\n            The default CSS class for the field input (defaults to 'x-form-field').\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "cls",
+      "SectionDescription": "\n            An optional extra CSS class that will be added to this component.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "msgTarget",
+      "SectionDescription": "\n            The location where the error message text should display. Must be one of the following values:\n            - qtip - Display a quick tip containing the message when the user hovers over the field. This is the default.\n            Ext.tip.QuickTipManager.init must have been called for this setting to work.\n            - title - Display the message in a default browser title attribute popup.\n            under Add a block div beneath the field containing the error message.\n            - side - Add an error icon to the right of the field, displaying the message in a popup on hover.\n            - none - Don't display any error message. This might be useful if you are implementing custom error display.\n            - [element id] - Add the error message directly to the innerHTML of the specified element.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "preventMark",
+      "SectionDescription": "\n            true to disable displaying any error message set on this object. Defaults to false.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "width",
+      "SectionDescription": "\n            Width of the field.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "RawJS",
+      "SectionDescription": "\n            Raw JS code to be injected in the field configuration.\n            ",
+      "SectionType": 4
+    }
+  ]
+}

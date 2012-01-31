@@ -1,0 +1,107 @@
+{
+  "FullName": "Codaxy.Dextop.IDextopEnvironment",
+  "Type": {
+    "BaseTypes": null,
+    "Namespace": "Codaxy.Dextop",
+    "ProtectionLevel": 0,
+    "TypeKind": 2,
+    "Methods": null,
+    "Parameters": null,
+    "Properties": [
+      {
+        "CanRead": true,
+        "CanWrite": false,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.IDextopEnvironment",
+        "TypeName": "System.String",
+        "Description": "\n            Gets the virtual path of the directory that contains the application hosted in the current application domain.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "VirtualAppPath",
+        "RefId": "VirtualAppPath"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": false,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.IDextopEnvironment",
+        "TypeName": "System.String",
+        "Description": "\n            Gets the physical drive path of the application directory for the application hosted in the current application domain.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "PhysicalAppPath",
+        "RefId": "PhysicalAppPath"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": false,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.IDextopEnvironment",
+        "TypeName": "System.DateTime",
+        "Description": "\n            Gets a DateTime object that is set to the current date and time on this computer, expressed as the local time.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Now",
+        "RefId": "Now"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": false,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.IDextopEnvironment",
+        "TypeName": "System.DateTime",
+        "Description": "\n            Gets a DateTime object that is set to the current date and time on this computer, expressed as the Coordinated Universal Time (UTC).\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "UtcNow",
+        "RefId": "UtcNow"
+      }
+    ],
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.IDextopEnvironment",
+    "Description": "\n            DextopEnvironment provides information about hosting environment.\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "IDextopEnvironment",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "IDextopEnvironment",
+  "SearchItems": [
+    {
+      "SectionName": "VirtualAppPath",
+      "SectionDescription": "\n            Gets the virtual path of the directory that contains the application hosted in the current application domain.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "PhysicalAppPath",
+      "SectionDescription": "\n            Gets the physical drive path of the application directory for the application hosted in the current application domain.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "Now",
+      "SectionDescription": "\n            Gets a DateTime object that is set to the current date and time on this computer, expressed as the local time.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "UtcNow",
+      "SectionDescription": "\n            Gets a DateTime object that is set to the current date and time on this computer, expressed as the Coordinated Universal Time (UTC).\n            ",
+      "SectionType": 4
+    }
+  ]
+}

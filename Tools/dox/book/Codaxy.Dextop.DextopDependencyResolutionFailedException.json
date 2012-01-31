@@ -1,0 +1,78 @@
+{
+  "FullName": "Codaxy.Dextop.DextopDependencyResolutionFailedException",
+  "Type": {
+    "BaseTypes": [
+      "Codaxy.Dextop.DextopException",
+      "System.Runtime.Serialization.ISerializable",
+      "System.Runtime.InteropServices._Exception"
+    ],
+    "Namespace": "Codaxy.Dextop",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Type",
+            "Description": "The type.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "type",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopDependencyResolutionFailedException",
+        "TypeName": null,
+        "Description": null,
+        "DescriptionTree": [
+          {
+            "Type": 0,
+            "Text": "\n            Initializes a new instance of the ",
+            "Ref": null,
+            "Children": null
+          },
+          {
+            "Type": 3,
+            "Text": "Codaxy.Dextop.DextopDependencyResolutionFailedException",
+            "Ref": "Codaxy.Dextop.DextopDependencyResolutionFailedException",
+            "Children": null
+          },
+          {
+            "Type": 0,
+            "Text": " class.\n            ",
+            "Ref": null,
+            "Children": null
+          }
+        ],
+        "HasDescription": true,
+        "Name": "DextopDependencyResolutionFailedException",
+        "RefId": "#ctor(System.Type)"
+      }
+    ],
+    "Parameters": null,
+    "Properties": null,
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.DextopDependencyResolutionFailedException",
+    "Description": "\n            \n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopDependencyResolutionFailedException",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopDependencyResolutionFailedException",
+  "SearchItems": [
+    {
+      "SectionName": "DextopDependencyResolutionFailedException",
+      "SectionDescription": null,
+      "SectionType": 5
+    }
+  ]
+}

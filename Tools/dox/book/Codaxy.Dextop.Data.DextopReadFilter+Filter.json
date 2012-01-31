@@ -1,0 +1,88 @@
+{
+  "FullName": "Codaxy.Dextop.Data.DextopReadFilter+Filter",
+  "Type": {
+    "BaseTypes": [
+      "System.Object"
+    ],
+    "Namespace": "Codaxy.Dextop.Data",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopReadFilter+Filter",
+        "TypeName": null,
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "Filter",
+        "RefId": "#ctor()"
+      }
+    ],
+    "Parameters": null,
+    "Properties": [
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopReadFilter+Filter",
+        "TypeName": "System.String",
+        "Description": "\n            Property to be filtered by.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "property",
+        "RefId": "property"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopReadFilter+Filter",
+        "TypeName": "System.String",
+        "Description": "\n            Filter value. \n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "value",
+        "RefId": "value"
+      }
+    ],
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Data.DextopReadFilter+Filter",
+    "Description": "\n            This class represents filter instructions sent by the store.\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopReadFilter+Filter",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopReadFilter+Filter",
+  "SearchItems": [
+    {
+      "SectionName": "Filter",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "property",
+      "SectionDescription": "\n            Property to be filtered by.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "value",
+      "SectionDescription": "\n            Filter value. \n            ",
+      "SectionType": 4
+    }
+  ]
+}

@@ -1,0 +1,890 @@
+{
+  "FullName": "Codaxy.Dextop.Tools.DextopJsWriter",
+  "Type": {
+    "BaseTypes": [
+      "System.Object"
+    ],
+    "Namespace": "Codaxy.Dextop.Tools",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.IO.TextWriter",
+            "Description": "The output writer.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "output",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.Tools.DextopJsWriterOptions",
+            "Description": "The writer options.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "options",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": null,
+        "Description": "\n            DextopJsWriter constructor.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "DextopJsWriter",
+        "RefId": "#ctor(System.IO.TextWriter,Codaxy.Dextop.Tools.DextopJsWriterOptions)"
+      },
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Writes { and increases indent.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "StartBlock",
+        "RefId": "StartBlock()"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The name.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "name",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Write the name of the property and a colon.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "WritePropertyName",
+        "RefId": "WritePropertyName(System.String)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "Name",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Object",
+            "Description": "Note that value will be quoted by default.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "value",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": "Quote string values.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "quote",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Add property { key:'value' }\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "AddProperty",
+        "RefId": "AddProperty(System.String,System.Object,System.Boolean)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "Name of the property.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "Property value.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "value",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Add property without quouting the value. Useful for injecting code constructs for property value.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "AddRawProperty",
+        "RefId": "AddRawProperty(System.String,System.String)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The name of the property.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The value of the propery.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "value",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Add property if value is not default value\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "DefaultRawProperty",
+        "RefId": "DefaultRawProperty(System.String,System.String)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The name of the property.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Object",
+            "Description": "The value of the propery.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "value",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Add key value pair if value is not default value\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "DefaultProperty",
+        "RefId": "DefaultProperty(System.String,System.Object)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The name of the property.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Int32",
+            "Description": "The value of the propery.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "value",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Int32",
+            "Description": "The default value.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "defaultValue",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Add key value pair if value is not default value\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "DefaultProperty",
+        "RefId": "DefaultProperty(System.String,System.Int32,System.Int32)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The name of the property.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": "The value of the propery.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "value",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Add key value pair if value is not default value\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "DefaultProperty",
+        "RefId": "DefaultProperty(System.String,System.Boolean)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The value of the propery.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.Tools.IDextopJsObject",
+            "Description": "The value of the propery.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "o",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Add property with an object value.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "AddProperty",
+        "RefId": "AddProperty(System.String,Codaxy.Dextop.Tools.IDextopJsObject)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.Tools.IDextopJsObject",
+            "Description": "The o.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "o",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Add JSON representation of the object\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "WriteObject",
+        "RefId": "WriteObject(Codaxy.Dextop.Tools.IDextopJsObject)"
+      },
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Write '}' and decrease the indent;\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "CloseBlock",
+        "RefId": "CloseBlock()"
+      },
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Write NewLine\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "WriteLine",
+        "RefId": "WriteLine()"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "line",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Write some text and go to next line\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "WriteLine",
+        "RefId": "WriteLine(System.String)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The string format.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "format",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Object[]",
+            "Description": "The params.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "p",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Writes formatted line.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "WriteLine",
+        "RefId": "WriteLine(System.String,System.Object[])"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The text.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "text",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Writes the specified text.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Write",
+        "RefId": "Write(System.String)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The string format.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "format",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Object[]",
+            "Description": "The params.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "p",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Write formatted text.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Write",
+        "RefId": "Write(System.String,System.Object[])"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The namespace.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "ns",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Register new Ext.namespace if neccessary\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "ExtNamespace",
+        "RefId": "ExtNamespace(System.String)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The name.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Collections.Generic.IEnumerable<Codaxy.Dextop.Tools.IDextopJsObject>",
+            "Description": "Array",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "a",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Adds key: array.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "AddProperty",
+        "RefId": "AddProperty(System.String,System.Collections.Generic.IEnumerable{Codaxy.Dextop.Tools.IDextopJsObject})"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Collections.Generic.IEnumerable<Codaxy.Dextop.Tools.IDextopJsObject>",
+            "Description": "Array",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "a",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Writes the array.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "WriteArray",
+        "RefId": "WriteArray(System.Collections.Generic.IEnumerable{Codaxy.Dextop.Tools.IDextopJsObject})"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Collections.IEnumerable",
+            "Description": "Array",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "a",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Writes the array.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "WriteArray",
+        "RefId": "WriteArray(System.Collections.IEnumerable)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The name of the function.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String[]",
+            "Description": "The function arguments.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "args",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Adds function block. e.g. : f: function(a1) {\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "StartFunctionBlock",
+        "RefId": "StartFunctionBlock(System.String,System.String[])"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "raw",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Write raw js to the object. \n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "WriteRawJs",
+        "RefId": "WriteRawJs(System.String)"
+      },
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            If cursor is not in the first row goes to new line\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "CheckNewLine",
+        "RefId": "CheckNewLine()"
+      },
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Starts the localization scope.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "StartLocalizationScope",
+        "RefId": "StartLocalizationScope()"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The name of the localizible property.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The value of the property.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "value",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "Name of the property to hold localized text.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "localizationName",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Adds the localization property.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "AddLocalizationProperty",
+        "RefId": "AddLocalizationProperty(System.String,System.String,System.String)"
+      },
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "System.Void",
+        "Description": "\n            Writes the localization items to the current object.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "WriteLocalizations",
+        "RefId": "WriteLocalizations()"
+      }
+    ],
+    "Parameters": null,
+    "Properties": [
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsWriter",
+        "TypeName": "Codaxy.Dextop.Tools.DextopJsWriterOptions",
+        "Description": "\n            Gets the options associated with the writer.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Options",
+        "RefId": "Options"
+      }
+    ],
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Tools.DextopJsWriter",
+    "Description": "\n            Class for generating JS files.\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopJsWriter",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopJsWriter",
+  "SearchItems": [
+    {
+      "SectionName": "DextopJsWriter",
+      "SectionDescription": "\n            DextopJsWriter constructor.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "StartBlock",
+      "SectionDescription": "\n            Writes { and increases indent.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "WritePropertyName",
+      "SectionDescription": "\n            Write the name of the property and a colon.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddProperty",
+      "SectionDescription": "\n            Add property { key:'value' }\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddRawProperty",
+      "SectionDescription": "\n            Add property without quouting the value. Useful for injecting code constructs for property value.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "DefaultRawProperty",
+      "SectionDescription": "\n            Add property if value is not default value\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "DefaultProperty",
+      "SectionDescription": "\n            Add key value pair if value is not default value\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "DefaultProperty",
+      "SectionDescription": "\n            Add key value pair if value is not default value\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "DefaultProperty",
+      "SectionDescription": "\n            Add key value pair if value is not default value\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddProperty",
+      "SectionDescription": "\n            Add property with an object value.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "WriteObject",
+      "SectionDescription": "\n            Add JSON representation of the object\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "CloseBlock",
+      "SectionDescription": "\n            Write '}' and decrease the indent;\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "WriteLine",
+      "SectionDescription": "\n            Write NewLine\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "WriteLine",
+      "SectionDescription": "\n            Write some text and go to next line\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "WriteLine",
+      "SectionDescription": "\n            Writes formatted line.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Write",
+      "SectionDescription": "\n            Writes the specified text.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Write",
+      "SectionDescription": "\n            Write formatted text.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "ExtNamespace",
+      "SectionDescription": "\n            Register new Ext.namespace if neccessary\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddProperty",
+      "SectionDescription": "\n            Adds key: array.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "WriteArray",
+      "SectionDescription": "\n            Writes the array.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "WriteArray",
+      "SectionDescription": "\n            Writes the array.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "StartFunctionBlock",
+      "SectionDescription": "\n            Adds function block. e.g. : f: function(a1) {\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "WriteRawJs",
+      "SectionDescription": "\n            Write raw js to the object. \n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "CheckNewLine",
+      "SectionDescription": "\n            If cursor is not in the first row goes to new line\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "StartLocalizationScope",
+      "SectionDescription": "\n            Starts the localization scope.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddLocalizationProperty",
+      "SectionDescription": "\n            Adds the localization property.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "WriteLocalizations",
+      "SectionDescription": "\n            Writes the localization items to the current object.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Options",
+      "SectionDescription": "\n            Gets the options associated with the writer.\n            ",
+      "SectionType": 4
+    }
+  ]
+}

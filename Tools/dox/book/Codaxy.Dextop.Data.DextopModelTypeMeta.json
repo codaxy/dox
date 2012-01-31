@@ -1,0 +1,168 @@
+{
+  "FullName": "Codaxy.Dextop.Data.DextopModelTypeMeta",
+  "Type": {
+    "BaseTypes": [
+      "System.Object"
+    ],
+    "Namespace": "Codaxy.Dextop.Data",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopModelTypeMeta",
+        "TypeName": null,
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "DextopModelTypeMeta",
+        "RefId": "#ctor()"
+      }
+    ],
+    "Parameters": null,
+    "Properties": [
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopModelTypeMeta",
+        "TypeName": "System.String",
+        "Description": "\n            Gets or sets the name of the model.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "ModelName",
+        "RefId": "ModelName"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopModelTypeMeta",
+        "TypeName": "System.String",
+        "Description": "\n            Gets or sets the id field.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "IdField",
+        "RefId": "IdField"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopModelTypeMeta",
+        "TypeName": "System.String[]",
+        "Description": "\n            Gets or sets the excluded fields.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "ExcludedFields",
+        "RefId": "ExcludedFields"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopModelTypeMeta",
+        "TypeName": "System.String[]",
+        "Description": "\n            Gets or sets the fields.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Fields",
+        "RefId": "Fields"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopModelTypeMeta",
+        "TypeName": "System.Type",
+        "Description": "\n            Gets or sets the type of the model.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "ModelType",
+        "RefId": "ModelType"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": false,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopModelTypeMeta",
+        "TypeName": "Codaxy.Dextop.Data.IDextopModelSerializer",
+        "Description": "\n            Gets the default array serializer associated with the model.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "ArraySerializer",
+        "RefId": "ArraySerializer"
+      }
+    ],
+    "Fields": [],
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Data.DextopModelTypeMeta",
+    "Description": "\n            Meta data associated with the DextopModel.\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopModelTypeMeta",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopModelTypeMeta",
+  "SearchItems": [
+    {
+      "SectionName": "DextopModelTypeMeta",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "ModelName",
+      "SectionDescription": "\n            Gets or sets the name of the model.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "IdField",
+      "SectionDescription": "\n            Gets or sets the id field.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "ExcludedFields",
+      "SectionDescription": "\n            Gets or sets the excluded fields.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "Fields",
+      "SectionDescription": "\n            Gets or sets the fields.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "ModelType",
+      "SectionDescription": "\n            Gets or sets the type of the model.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "ArraySerializer",
+      "SectionDescription": "\n            Gets the default array serializer associated with the model.\n            ",
+      "SectionType": 4
+    }
+  ]
+}

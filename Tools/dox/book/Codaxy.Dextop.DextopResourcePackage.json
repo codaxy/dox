@@ -1,0 +1,289 @@
+{
+  "FullName": "Codaxy.Dextop.DextopResourcePackage",
+  "Type": {
+    "BaseTypes": [
+      "System.Object"
+    ],
+    "Namespace": "Codaxy.Dextop",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.DextopModule",
+            "Description": "The module.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "module",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopResourcePackage",
+        "TypeName": null,
+        "Description": null,
+        "DescriptionTree": [
+          {
+            "Type": 0,
+            "Text": "\n            Initializes a new instance of the ",
+            "Ref": null,
+            "Children": null
+          },
+          {
+            "Type": 3,
+            "Text": "Codaxy.Dextop.DextopResourcePackage",
+            "Ref": "Codaxy.Dextop.DextopResourcePackage",
+            "Children": null
+          },
+          {
+            "Type": 0,
+            "Text": " class.\n            ",
+            "Ref": null,
+            "Children": null
+          }
+        ],
+        "HasDescription": true,
+        "Name": "DextopResourcePackage",
+        "RefId": "#ctor(Codaxy.Dextop.DextopModule)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Collections.Generic.IEnumerable<System.String>",
+            "Description": "The files.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "files",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopResourcePackage",
+        "TypeName": "System.Void",
+        "Description": "\n            Adds the files.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "AddFiles",
+        "RefId": "AddFiles(System.Collections.Generic.IEnumerable{System.String})"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The lang.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "lang",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Collections.Generic.IEnumerable<System.String>",
+            "Description": "The files.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "files",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopResourcePackage",
+        "TypeName": "System.Void",
+        "Description": "\n            Adds the localization files.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "AddLocalization",
+        "RefId": "AddLocalization(System.String,System.Collections.Generic.IEnumerable{System.String})"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The virtual path.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "virtualPath",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The extension.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "extension",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": null,
+            "DescriptionTree": [
+              {
+                "Type": 0,
+                "Text": "if set to ",
+                "Ref": null,
+                "Children": null
+              },
+              {
+                "Type": 0,
+                "Text": " [throw if not found].",
+                "Ref": null,
+                "Children": null
+              }
+            ],
+            "HasDescription": true,
+            "Name": "throwIfNotFound",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "",
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopResourcePackage",
+        "TypeName": "System.Collections.Generic.IList<System.String>",
+        "Description": "\n            Searches the server for resource files.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "SearchServer",
+        "RefId": "SearchServer(System.String,System.String,System.Boolean)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The lang.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "lang",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "",
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopResourcePackage",
+        "TypeName": "System.Collections.Generic.IList<System.String>",
+        "Description": "\n            Gets the files in the package.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "GetFiles",
+        "RefId": "GetFiles(System.String)"
+      }
+    ],
+    "Parameters": null,
+    "Properties": [
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopResourcePackage",
+        "TypeName": "Codaxy.Dextop.DextopModule",
+        "Description": "\n            Gets the module associated with the package.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Module",
+        "RefId": "Module"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopResourcePackage",
+        "TypeName": "System.Collections.Generic.List<System.String>",
+        "Description": "\n            Gets the files in the package.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Files",
+        "RefId": "Files"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopResourcePackage",
+        "TypeName": "System.Collections.Generic.Dictionary<System.String, System.Collections.Generic.List<System.String>>",
+        "Description": "\n            Gets the localizations dictionary in the package.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Localizations",
+        "RefId": "Localizations"
+      }
+    ],
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.DextopResourcePackage",
+    "Description": "\n            Class for managing file list of JS and CSS packages.\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopResourcePackage",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopResourcePackage",
+  "SearchItems": [
+    {
+      "SectionName": "DextopResourcePackage",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddFiles",
+      "SectionDescription": "\n            Adds the files.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddLocalization",
+      "SectionDescription": "\n            Adds the localization files.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "SearchServer",
+      "SectionDescription": "\n            Searches the server for resource files.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "GetFiles",
+      "SectionDescription": "\n            Gets the files in the package.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Module",
+      "SectionDescription": "\n            Gets the module associated with the package.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "Files",
+      "SectionDescription": "\n            Gets the files in the package.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "Localizations",
+      "SectionDescription": "\n            Gets the localizations dictionary in the package.\n            ",
+      "SectionType": 4
+    }
+  ]
+}

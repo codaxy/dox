@@ -1,0 +1,68 @@
+{
+  "FullName": "Codaxy.Dextop.Data.DextopStoreEventArgs",
+  "Type": {
+    "BaseTypes": [
+      "System.EventArgs"
+    ],
+    "Namespace": "Codaxy.Dextop.Data",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopStoreEventArgs",
+        "TypeName": null,
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "DextopStoreEventArgs",
+        "RefId": "#ctor()"
+      }
+    ],
+    "Parameters": null,
+    "Properties": [
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopStoreEventArgs",
+        "TypeName": "Codaxy.Dextop.Data.DextopStoreEvent",
+        "Description": "\n            Gets or sets the event.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Event",
+        "RefId": "Event"
+      }
+    ],
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Data.DextopStoreEventArgs",
+    "Description": "\n            \n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopStoreEventArgs",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopStoreEventArgs",
+  "SearchItems": [
+    {
+      "SectionName": "DextopStoreEventArgs",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Event",
+      "SectionDescription": "\n            Gets or sets the event.\n            ",
+      "SectionType": 4
+    }
+  ]
+}

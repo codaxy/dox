@@ -1,0 +1,261 @@
+{
+  "FullName": "Codaxy.Dextop.Forms.DextopFormObject",
+  "Type": {
+    "BaseTypes": [
+      "Codaxy.Dextop.Tools.DextopJsBag",
+      "Codaxy.Dextop.Tools.IDextopJsObject"
+    ],
+    "Namespace": "Codaxy.Dextop.Forms",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormObject",
+        "TypeName": null,
+        "Description": null,
+        "DescriptionTree": [
+          {
+            "Type": 0,
+            "Text": "\n            Initializes a new instance of the ",
+            "Ref": null,
+            "Children": null
+          },
+          {
+            "Type": 3,
+            "Text": "Codaxy.Dextop.Forms.DextopFormObject",
+            "Ref": "Codaxy.Dextop.Forms.DextopFormObject",
+            "Children": null
+          },
+          {
+            "Type": 0,
+            "Text": " class.\n            ",
+            "Ref": null,
+            "Children": null
+          }
+        ],
+        "HasDescription": true,
+        "Name": "DextopFormObject",
+        "RefId": "#ctor()"
+      },
+      {
+        "Parameters": null,
+        "ReturnDescription": "\n              true if this instance is empty; otherwise, false.\n            ",
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsBag",
+        "TypeName": "System.Boolean",
+        "Description": "\n            Determines whether this instance is empty.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "IsEmpty",
+        "RefId": "IsEmpty()"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "propertyName",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Func<System.String, T>",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "create",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsBag",
+        "TypeName": "T",
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "Get",
+        "RefId": "Get``1(System.String,System.Func{System.String,T})"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.Tools.DextopJsWriter",
+            "Description": "The writer.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "jw",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsBag",
+        "TypeName": "System.Void",
+        "Description": "\n            Writes the JS representation of the object to the writer.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "WriteJs",
+        "RefId": "WriteJs(Codaxy.Dextop.Tools.DextopJsWriter)"
+      }
+    ],
+    "Parameters": null,
+    "Properties": [
+      {
+        "CanRead": true,
+        "CanWrite": false,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormObject",
+        "TypeName": "System.String",
+        "Description": "\n            Gets the name of the item.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "ItemName",
+        "RefId": "ItemName"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormObject",
+        "TypeName": "System.String",
+        "Description": "\n            Gets or sets the raw JS which wil be appended to the object.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Raw",
+        "RefId": "Raw"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.DextopFormObject",
+        "TypeName": "System.Collections.Generic.List<Codaxy.Dextop.Forms.DextopFormObject>",
+        "Description": "\n            Gets the child items.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Items",
+        "RefId": "Items"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": false,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsBag",
+        "TypeName": "System.Collections.Generic.Dictionary<System.String, System.Object>",
+        "Description": "\n            Gets the properties in the bag.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Properties",
+        "RefId": "Properties"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "propertyName",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopJsBag",
+        "TypeName": "System.Object",
+        "Description": "\n            Gets or sets the value with the specified property name.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "this",
+        "RefId": "Item(System.String)"
+      }
+    ],
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Forms.DextopFormObject",
+    "Description": "\n            Base class for all Dextop form objects.\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopFormObject",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopFormObject",
+  "SearchItems": [
+    {
+      "SectionName": "DextopFormObject",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "IsEmpty",
+      "SectionDescription": "\n            Determines whether this instance is empty.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Get",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "WriteJs",
+      "SectionDescription": "\n            Writes the JS representation of the object to the writer.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "ItemName",
+      "SectionDescription": "\n            Gets the name of the item.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "Raw",
+      "SectionDescription": "\n            Gets or sets the raw JS which wil be appended to the object.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "Items",
+      "SectionDescription": "\n            Gets the child items.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "Properties",
+      "SectionDescription": "\n            Gets the properties in the bag.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "this",
+      "SectionDescription": "\n            Gets or sets the value with the specified property name.\n            ",
+      "SectionType": 4
+    }
+  ]
+}

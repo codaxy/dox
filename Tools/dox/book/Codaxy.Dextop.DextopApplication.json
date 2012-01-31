@@ -1,0 +1,471 @@
+{
+  "FullName": "Codaxy.Dextop.DextopApplication",
+  "Type": {
+    "BaseTypes": [
+      "System.Object",
+      "System.IDisposable"
+    ],
+    "Namespace": "Codaxy.Dextop",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopApplication",
+        "TypeName": null,
+        "Description": null,
+        "DescriptionTree": [
+          {
+            "Type": 0,
+            "Text": "\n            Initializes a new instance of the ",
+            "Ref": null,
+            "Children": null
+          },
+          {
+            "Type": 3,
+            "Text": "Codaxy.Dextop.DextopApplication",
+            "Ref": "Codaxy.Dextop.DextopApplication",
+            "Children": null
+          },
+          {
+            "Type": 0,
+            "Text": " class.\n            ",
+            "Ref": null,
+            "Children": null
+          }
+        ],
+        "HasDescription": true,
+        "Name": "DextopApplication",
+        "RefId": "#ctor()"
+      },
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopApplication",
+        "TypeName": "System.Void",
+        "Description": "\n            Initializes this instance. All modules are initialized.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Initialize",
+        "RefId": "Initialize()"
+      },
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopApplication",
+        "TypeName": "System.Void",
+        "Description": "\n            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Dispose",
+        "RefId": "Dispose()"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.DextopApplication",
+            "Description": "The application.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "application",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 4,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopApplication",
+        "TypeName": "System.Void",
+        "Description": "\n            Registers the application.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "RegisterApplication",
+        "RefId": "RegisterApplication(Codaxy.Dextop.DextopApplication)"
+      },
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopApplication",
+        "TypeName": "System.Void",
+        "Description": "\n            Registers the application.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Register",
+        "RefId": "Register()"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The app key.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "key",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "",
+        "MemberFlag": 4,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopApplication",
+        "TypeName": "Codaxy.Dextop.DextopApplication",
+        "Description": "\n            Gets the application.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "GetApplication",
+        "RefId": "GetApplication(System.String)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.DextopSession",
+            "Description": "The session.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "session",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "Session configuration.",
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopApplication",
+        "TypeName": "Codaxy.Dextop.DextopConfig",
+        "Description": "\n            Adds given session to the application.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "AddSession",
+        "RefId": "AddSession(Codaxy.Dextop.DextopSession)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The session id.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "sessionId",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "The session.",
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopApplication",
+        "TypeName": "Codaxy.Dextop.DextopSession",
+        "Description": "\n            Gets the session with the specified session Id. Exception is thrown if session is not found or exipred.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "GetSession",
+        "RefId": "GetSession(System.String)"
+      },
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopApplication",
+        "TypeName": "System.Void",
+        "Description": "\n            Removes all expired sessions.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "RemoveExpiredSessions",
+        "RefId": "RemoveExpiredSessions()"
+      },
+      {
+        "Parameters": null,
+        "ReturnDescription": "",
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopApplication",
+        "TypeName": "Codaxy.Dextop.DextopSession[]",
+        "Description": "\n            Returns all sessions.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "GetSessions",
+        "RefId": "GetSessions()"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "Name of the C# (server) namespace. If the name ends with *, prefix match is used.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "ns",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "Client namespace.",
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopApplication",
+        "TypeName": "System.String",
+        "Description": "\n            Map C# (server) class namespace to JS (client) namespace.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "MapNamespace",
+        "RefId": "MapNamespace(System.String)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Type",
+            "Description": "The type.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "type",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String[]",
+            "Description": "The namespace suffix.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "namespaceSuffix",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "Client type name.",
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopApplication",
+        "TypeName": "System.String",
+        "Description": "\n            Maps the C# (server) class name to the JS (client) type name;\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "MapTypeName",
+        "RefId": "MapTypeName(System.Type,System.String[])"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Globalization.CultureInfo",
+            "Description": "The culture.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "culture",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "",
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopApplication",
+        "TypeName": "System.String[]",
+        "Description": "\n            Gets the JS files registered in all modules.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "GetJsFiles",
+        "RefId": "GetJsFiles(System.Globalization.CultureInfo)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Globalization.CultureInfo",
+            "Description": "The culture.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "culture",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "",
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopApplication",
+        "TypeName": "System.String[]",
+        "Description": "\n            Gets the CSS files registered in all modules.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "GetCssFiles",
+        "RefId": "GetCssFiles(System.Globalization.CultureInfo)"
+      }
+    ],
+    "Parameters": null,
+    "Properties": [
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopApplication",
+        "TypeName": "System.String",
+        "Description": "\n            Unique value associatated with the application instance.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "AppKey",
+        "RefId": "AppKey"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopApplication",
+        "TypeName": "System.Boolean",
+        "Description": "\n            Set True if application is using Preprocessor tool to generate and optimize resources in build time.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "PreprocessingEnabled",
+        "RefId": "PreprocessingEnabled"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopApplication",
+        "TypeName": "System.Boolean",
+        "Description": "\n            Set True if application is bootstrapped for preprocessing.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "PreprocessorMode",
+        "RefId": "PreprocessorMode"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopApplication",
+        "TypeName": "Codaxy.Dextop.Data.DextopModelManager",
+        "Description": "\n            Gets the model manager.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "ModelManager",
+        "RefId": "ModelManager"
+      }
+    ],
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.DextopApplication",
+    "Description": "\n            Dextop application class provides\n            - session management\n            - module registration\n            - namespace mapping\n             \n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopApplication",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopApplication",
+  "SearchItems": [
+    {
+      "SectionName": "DextopApplication",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Initialize",
+      "SectionDescription": "\n            Initializes this instance. All modules are initialized.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Dispose",
+      "SectionDescription": "\n            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "RegisterApplication",
+      "SectionDescription": "\n            Registers the application.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Register",
+      "SectionDescription": "\n            Registers the application.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "GetApplication",
+      "SectionDescription": "\n            Gets the application.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddSession",
+      "SectionDescription": "\n            Adds given session to the application.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "GetSession",
+      "SectionDescription": "\n            Gets the session with the specified session Id. Exception is thrown if session is not found or exipred.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "RemoveExpiredSessions",
+      "SectionDescription": "\n            Removes all expired sessions.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "GetSessions",
+      "SectionDescription": "\n            Returns all sessions.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "MapNamespace",
+      "SectionDescription": "\n            Map C# (server) class namespace to JS (client) namespace.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "MapTypeName",
+      "SectionDescription": "\n            Maps the C# (server) class name to the JS (client) type name;\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "GetJsFiles",
+      "SectionDescription": "\n            Gets the JS files registered in all modules.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "GetCssFiles",
+      "SectionDescription": "\n            Gets the CSS files registered in all modules.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AppKey",
+      "SectionDescription": "\n            Unique value associatated with the application instance.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "PreprocessingEnabled",
+      "SectionDescription": "\n            Set True if application is using Preprocessor tool to generate and optimize resources in build time.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "PreprocessorMode",
+      "SectionDescription": "\n            Set True if application is bootstrapped for preprocessing.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "ModelManager",
+      "SectionDescription": "\n            Gets the model manager.\n            ",
+      "SectionType": 4
+    }
+  ]
+}

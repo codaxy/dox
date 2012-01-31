@@ -1,0 +1,73 @@
+{
+  "FullName": "Codaxy.Dextop.IDextopFileLoader",
+  "Type": {
+    "BaseTypes": null,
+    "Namespace": "Codaxy.Dextop",
+    "ProtectionLevel": 0,
+    "TypeKind": 2,
+    "Methods": [
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.DextopApplication",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "application",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.DextopModule",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "module",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.IO.Stream",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "inputStream",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.IDextopFileLoader",
+        "TypeName": "System.Void",
+        "Description": "\n            Loads data from the input stream.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Load",
+        "RefId": "Load(Codaxy.Dextop.DextopApplication,Codaxy.Dextop.DextopModule,System.IO.Stream)"
+      }
+    ],
+    "Parameters": null,
+    "Properties": null,
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.IDextopFileLoader",
+    "Description": "\n            Loads data on startup.\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "IDextopFileLoader",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "IDextopFileLoader",
+  "SearchItems": [
+    {
+      "SectionName": "Load",
+      "SectionDescription": "\n            Loads data from the input stream.\n            ",
+      "SectionType": 5
+    }
+  ]
+}

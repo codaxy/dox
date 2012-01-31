@@ -1,0 +1,106 @@
+{
+  "FullName": "Codaxy.Dextop.Data.DextopValidateInclusionAttribute",
+  "Type": {
+    "BaseTypes": [
+      "Codaxy.Dextop.Data.DextopModelValidationAttribute",
+      "System.Runtime.InteropServices._Attribute"
+    ],
+    "Namespace": "Codaxy.Dextop.Data",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopValidateInclusionAttribute",
+        "TypeName": null,
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "DextopValidateInclusionAttribute",
+        "RefId": "#ctor()"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The mmeber name.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Type",
+            "Description": "The member type.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "type",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "",
+        "MemberFlag": 40,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopValidateInclusionAttribute",
+        "TypeName": "Codaxy.Dextop.Data.DextopModel+Validation",
+        "Description": "\n            Converts the attribute to the validation object.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "ToValidation",
+        "RefId": "ToValidation(System.String,System.Type)"
+      }
+    ],
+    "Parameters": null,
+    "Properties": [
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopValidateInclusionAttribute",
+        "TypeName": "System.String[]",
+        "Description": "\n            List with possible field values\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "list",
+        "RefId": "list"
+      }
+    ],
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Data.DextopValidateInclusionAttribute",
+    "Description": "\n            Inclusion validation.\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopValidateInclusionAttribute",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopValidateInclusionAttribute",
+  "SearchItems": [
+    {
+      "SectionName": "DextopValidateInclusionAttribute",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "ToValidation",
+      "SectionDescription": "\n            Converts the attribute to the validation object.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "list",
+      "SectionDescription": "\n            List with possible field values\n            ",
+      "SectionType": 4
+    }
+  ]
+}

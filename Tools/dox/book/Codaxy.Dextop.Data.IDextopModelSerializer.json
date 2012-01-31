@@ -1,0 +1,83 @@
+{
+  "FullName": "Codaxy.Dextop.Data.IDextopModelSerializer",
+  "Type": {
+    "BaseTypes": null,
+    "Namespace": "Codaxy.Dextop.Data",
+    "ProtectionLevel": 0,
+    "TypeKind": 2,
+    "Methods": [
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Collections.Generic.IList<System.Object>",
+            "Description": "The records.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "records",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "JSON",
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.IDextopModelSerializer",
+        "TypeName": "System.Object",
+        "Description": "\n            Serializes the specified records to JSON string.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Serialize",
+        "RefId": "Serialize(System.Collections.Generic.IList{System.Object})"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Object",
+            "Description": "The JSON.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "json",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "",
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.IDextopModelSerializer",
+        "TypeName": "System.Collections.Generic.IList<System.Object>",
+        "Description": "\n            Deserializes the specified JSON string to records.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Deserialize",
+        "RefId": "Deserialize(System.Object)"
+      }
+    ],
+    "Parameters": null,
+    "Properties": null,
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Data.IDextopModelSerializer",
+    "Description": "\n            Model serializer encodes/decodes model data to JSON and vice versa.\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "IDextopModelSerializer",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "IDextopModelSerializer",
+  "SearchItems": [
+    {
+      "SectionName": "Serialize",
+      "SectionDescription": "\n            Serializes the specified records to JSON string.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Deserialize",
+      "SectionDescription": "\n            Deserializes the specified JSON string to records.\n            ",
+      "SectionType": 5
+    }
+  ]
+}

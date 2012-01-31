@@ -1,0 +1,88 @@
+{
+  "FullName": "Codaxy.Dextop.Data.DextopReadFilter+Sorter",
+  "Type": {
+    "BaseTypes": [
+      "System.Object"
+    ],
+    "Namespace": "Codaxy.Dextop.Data",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopReadFilter+Sorter",
+        "TypeName": null,
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "Sorter",
+        "RefId": "#ctor()"
+      }
+    ],
+    "Parameters": null,
+    "Properties": [
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopReadFilter+Sorter",
+        "TypeName": "System.String",
+        "Description": "\n            Property to be sorted by.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "property",
+        "RefId": "property"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopReadFilter+Sorter",
+        "TypeName": "System.String",
+        "Description": "\n            Sort direction. \n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "direction",
+        "RefId": "direction"
+      }
+    ],
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Data.DextopReadFilter+Sorter",
+    "Description": "\n            This class represents sort instructions sent by the store.\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopReadFilter+Sorter",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopReadFilter+Sorter",
+  "SearchItems": [
+    {
+      "SectionName": "Sorter",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "property",
+      "SectionDescription": "\n            Property to be sorted by.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "direction",
+      "SectionDescription": "\n            Sort direction. \n            ",
+      "SectionType": 4
+    }
+  ]
+}

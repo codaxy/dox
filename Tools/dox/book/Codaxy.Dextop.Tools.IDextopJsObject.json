@@ -1,0 +1,55 @@
+{
+  "FullName": "Codaxy.Dextop.Tools.IDextopJsObject",
+  "Type": {
+    "BaseTypes": null,
+    "Namespace": "Codaxy.Dextop.Tools",
+    "ProtectionLevel": 0,
+    "TypeKind": 2,
+    "Methods": [
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.Tools.DextopJsWriter",
+            "Description": "The writer.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "jw",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.IDextopJsObject",
+        "TypeName": "System.Void",
+        "Description": "\n            Writes the JS representation of the object to the writer.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "WriteJs",
+        "RefId": "WriteJs(Codaxy.Dextop.Tools.DextopJsWriter)"
+      }
+    ],
+    "Parameters": null,
+    "Properties": null,
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Tools.IDextopJsObject",
+    "Description": "\n            An object which knows how to write its own JS implementation\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "IDextopJsObject",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "IDextopJsObject",
+  "SearchItems": [
+    {
+      "SectionName": "WriteJs",
+      "SectionDescription": "\n            Writes the JS representation of the object to the writer.\n            ",
+      "SectionType": 5
+    }
+  ]
+}

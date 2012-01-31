@@ -1,0 +1,229 @@
+{
+  "FullName": "Codaxy.Dextop.Data.DextopModelFieldAttribute",
+  "Type": {
+    "BaseTypes": [
+      "System.Attribute",
+      "System.Runtime.InteropServices._Attribute"
+    ],
+    "Namespace": "Codaxy.Dextop.Data",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopModelFieldAttribute",
+        "TypeName": null,
+        "Description": "\n            \n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "DextopModelFieldAttribute",
+        "RefId": "#ctor()"
+      }
+    ],
+    "Parameters": null,
+    "Properties": [
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopModelFieldAttribute",
+        "TypeName": "System.Object",
+        "Description": "\n            Gets or sets the default value.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "defaultValue",
+        "RefId": "defaultValue"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopModelFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            A function which converts the value provided by the Reader into an object that will be stored in the Model.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "convert",
+        "RefId": "convert"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopModelFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            Used when converting received data into a Date when the type is specified as \"date\".\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "dateFormat",
+        "RefId": "dateFormat"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopModelFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            A path expression for use by the Ext.data.reader.Reader implementation that is creating the Model to extract the Field value from the data object. If the path expression is the same as the field name, the mapping may be omitted.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "mapping",
+        "RefId": "mapping"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopModelFieldAttribute",
+        "TypeName": "System.Boolean",
+        "Description": "\n            False to exclude this field from the Ext.data.Model.modified fields in a model. This will also exclude the field from being written using a Ext.data.writer.Writer. This option is useful when model fields are used to keep state on the client but do not need to be persisted to the server. Defaults to true.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "persist",
+        "RefId": "persist"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopModelFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            Initial direction to sort (\"ASC\" or \"DESC\"). Defaults to \"ASC\".\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "sortDir",
+        "RefId": "sortDir"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopModelFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            A function which converts a Field's value to a comparable value in order to ensure correct sort ordering. \n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "sortType",
+        "RefId": "sortType"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopModelFieldAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            The data type for automatic conversion from received data to the stored value if convert has not been specified. \n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "type",
+        "RefId": "type"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopModelFieldAttribute",
+        "TypeName": "System.Boolean",
+        "Description": "\n            Use when converting received data into a Number type (either int or float). If the value cannot be parsed, null will be used if useNull is true, otherwise the value will be 0. Defaults to false.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "useNotNull",
+        "RefId": "useNotNull"
+      }
+    ],
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Data.DextopModelFieldAttribute",
+    "Description": "\n            Override some of the default values to field or property.\n             ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopModelFieldAttribute",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopModelFieldAttribute",
+  "SearchItems": [
+    {
+      "SectionName": "DextopModelFieldAttribute",
+      "SectionDescription": "\n            \n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "defaultValue",
+      "SectionDescription": "\n            Gets or sets the default value.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "convert",
+      "SectionDescription": "\n            A function which converts the value provided by the Reader into an object that will be stored in the Model.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "dateFormat",
+      "SectionDescription": "\n            Used when converting received data into a Date when the type is specified as \"date\".\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "mapping",
+      "SectionDescription": "\n            A path expression for use by the Ext.data.reader.Reader implementation that is creating the Model to extract the Field value from the data object. If the path expression is the same as the field name, the mapping may be omitted.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "persist",
+      "SectionDescription": "\n            False to exclude this field from the Ext.data.Model.modified fields in a model. This will also exclude the field from being written using a Ext.data.writer.Writer. This option is useful when model fields are used to keep state on the client but do not need to be persisted to the server. Defaults to true.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "sortDir",
+      "SectionDescription": "\n            Initial direction to sort (\"ASC\" or \"DESC\"). Defaults to \"ASC\".\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "sortType",
+      "SectionDescription": "\n            A function which converts a Field's value to a comparable value in order to ensure correct sort ordering. \n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "type",
+      "SectionDescription": "\n            The data type for automatic conversion from received data to the stored value if convert has not been specified. \n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "useNotNull",
+      "SectionDescription": "\n            Use when converting received data into a Number type (either int or float). If the value cannot be parsed, null will be used if useNull is true, otherwise the value will be 0. Defaults to false.\n            ",
+      "SectionType": 4
+    }
+  ]
+}

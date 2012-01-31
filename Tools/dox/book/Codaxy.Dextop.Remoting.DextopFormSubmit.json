@@ -1,0 +1,126 @@
+{
+  "FullName": "Codaxy.Dextop.Remoting.DextopFormSubmit",
+  "Type": {
+    "BaseTypes": [
+      "System.Object"
+    ],
+    "Namespace": "Codaxy.Dextop.Remoting",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Remoting.DextopFormSubmit",
+        "TypeName": null,
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "DextopFormSubmit",
+        "RefId": "#ctor()"
+      },
+      {
+        "Parameters": null,
+        "ReturnDescription": "",
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Remoting.DextopFormSubmit",
+        "TypeName": "T",
+        "Description": "\n            Decode JSON field values to a specified type. Files are also mapped.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "DecodeForm",
+        "RefId": "DecodeForm``1()"
+      }
+    ],
+    "Parameters": null,
+    "Properties": [
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Remoting.DextopFormSubmit",
+        "TypeName": "System.Collections.Generic.Dictionary<System.String, Codaxy.Dextop.DextopFile>",
+        "Description": "\n            Gets or sets the files.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Files",
+        "RefId": "Files"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Remoting.DextopFormSubmit",
+        "TypeName": "System.Web.HttpContext",
+        "Description": "\n            Gets or sets the HTTP context.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Context",
+        "RefId": "Context"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Remoting.DextopFormSubmit",
+        "TypeName": "System.String",
+        "Description": "\n            Gets the JSON encoded values of form fields.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "FieldValuesJSON",
+        "RefId": "FieldValuesJSON"
+      }
+    ],
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Remoting.DextopFormSubmit",
+    "Description": "\n            Special class containing the data associated with form submission.\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopFormSubmit",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopFormSubmit",
+  "SearchItems": [
+    {
+      "SectionName": "DextopFormSubmit",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "DecodeForm",
+      "SectionDescription": "\n            Decode JSON field values to a specified type. Files are also mapped.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Files",
+      "SectionDescription": "\n            Gets or sets the files.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "Context",
+      "SectionDescription": "\n            Gets or sets the HTTP context.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "FieldValuesJSON",
+      "SectionDescription": "\n            Gets the JSON encoded values of form fields.\n            ",
+      "SectionType": 4
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "FullName": "Codaxy.Dextop.Data.DextopModelAttribute",
+  "Type": {
+    "BaseTypes": [
+      "System.Attribute",
+      "System.Runtime.InteropServices._Attribute"
+    ],
+    "Namespace": "Codaxy.Dextop.Data",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopModelAttribute",
+        "TypeName": null,
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "DextopModelAttribute",
+        "RefId": "#ctor()"
+      }
+    ],
+    "Parameters": null,
+    "Properties": [
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopModelAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            Name of the id field. Alternatively, use DextopModelId attribute.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Id",
+        "RefId": "Id"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopModelAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            Optinal custom model name\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Name",
+        "RefId": "Name"
+      }
+    ],
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Data.DextopModelAttribute",
+    "Description": "\n            Mark that class is a model class.\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopModelAttribute",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopModelAttribute",
+  "SearchItems": [
+    {
+      "SectionName": "DextopModelAttribute",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Id",
+      "SectionDescription": "\n            Name of the id field. Alternatively, use DextopModelId attribute.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "Name",
+      "SectionDescription": "\n            Optinal custom model name\n            ",
+      "SectionType": 4
+    }
+  ]
+}

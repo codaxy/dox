@@ -1,0 +1,55 @@
+{
+  "FullName": "Codaxy.Dextop.Data.IDextopReadProxy<Model>",
+  "Type": {
+    "BaseTypes": null,
+    "Namespace": "Codaxy.Dextop.Data",
+    "ProtectionLevel": 0,
+    "TypeKind": 2,
+    "Methods": [
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.Data.DextopReadFilter",
+            "Description": "The filter.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "filter",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "Read result.",
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.IDextopReadProxy<Model>",
+        "TypeName": "Codaxy.Dextop.Data.DextopReadResult<Model>",
+        "Description": "\n            Read records using the specified filter.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Read",
+        "RefId": "Read(Codaxy.Dextop.Data.DextopReadFilter)"
+      }
+    ],
+    "Parameters": null,
+    "Properties": null,
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Data.IDextopReadProxy<Model>",
+    "Description": "\n            Data proxy used to load data by the client\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "IDextopReadProxy<Model>",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "IDextopReadProxy<Model>",
+  "SearchItems": [
+    {
+      "SectionName": "Read",
+      "SectionDescription": "\n            Read records using the specified filter.\n            ",
+      "SectionType": 5
+    }
+  ]
+}

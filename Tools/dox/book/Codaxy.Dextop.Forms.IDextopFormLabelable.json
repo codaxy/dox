@@ -1,0 +1,267 @@
+{
+  "FullName": "Codaxy.Dextop.Forms.IDextopFormLabelable",
+  "Type": {
+    "BaseTypes": null,
+    "Namespace": "Codaxy.Dextop.Forms",
+    "ProtectionLevel": 0,
+    "TypeKind": 2,
+    "Methods": null,
+    "Parameters": null,
+    "Properties": [
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.IDextopFormLabelable",
+        "TypeName": "System.Boolean",
+        "Description": "\n            Set to true to completely hide the label element (fieldLabel and labelSeparator).\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "hideLabel",
+        "RefId": "hideLabel"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.IDextopFormLabelable",
+        "TypeName": "System.Boolean",
+        "Description": "\n            When set to true, the label element (fieldLabel and labelSeparator) will be automatically hidden if the fieldLabel is empty. Setting this to false will cause the empty label element to be rendered and space to be reserved for it; this is useful if you want a field without a label to line up with other labeled fields in the same form.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "hideEmptyLabel",
+        "RefId": "hideEmptyLabel"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.IDextopFormLabelable",
+        "TypeName": "System.String",
+        "Description": "\n            The label for the field. It gets appended with the labelSeparator, and its position and sizing is determined by the labelAlign, labelWidth, and labelPad configs.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "fieldLabel",
+        "RefId": "fieldLabel"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.IDextopFormLabelable",
+        "TypeName": "System.String",
+        "Description": "\n            The CSS class to use when marking the component invalid (defaults to 'x-form-invalid')\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "invalidCls",
+        "RefId": "invalidCls"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.IDextopFormLabelable",
+        "TypeName": "System.String",
+        "Description": "\n            Controls the position and alignment of the fieldLabel. Valid values are:\n            - \"left\" (the default) - The label is positioned to the left of the field, with its text aligned to the left. Its width is determined by the labelWidth config.\n            - \"top\" - The label is positioned above the field.\n            - \"right\" - The label is positioned to the left of the field, with its text aligned to the right. Its width is determined by the labelWidth config.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "labelAlign",
+        "RefId": "labelAlign"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.IDextopFormLabelable",
+        "TypeName": "System.String",
+        "Description": "\n            The CSS class to be applied to the label element. Defaults to 'x-form-item-label'.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "labelCls",
+        "RefId": "labelCls"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.IDextopFormLabelable",
+        "TypeName": "System.Int32",
+        "Description": "\n            The amount of space in pixels between the fieldLabel and the input field. Defaults to 5.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "labelPad",
+        "RefId": "labelPad"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.IDextopFormLabelable",
+        "TypeName": "System.String",
+        "Description": "\n            Character(s) to be inserted at the end of the label text.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "labelSeparator",
+        "RefId": "labelSeparator"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.IDextopFormLabelable",
+        "TypeName": "System.String",
+        "Description": "\n            A CSS style specification string to apply directly to this field's label.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "labelStyle",
+        "RefId": "labelStyle"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.IDextopFormLabelable",
+        "TypeName": "System.Int32",
+        "Description": "\n            The width of the fieldLabel in pixels. Only applicable if the labelAlign is set to \"left\" or \"right\". Defaults to 100.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "labelWidth",
+        "RefId": "labelWidth"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.IDextopFormLabelable",
+        "TypeName": "System.String",
+        "Description": "The location where the error message text should display. Must be one of the following values:\n            - qtip - Display a quick tip containing the message when the user hovers over the field. This is the default.\n            Ext.tip.QuickTipManager.init must have been called for this setting to work.\n             - title - Display the message in a default browser title attribute popup.\n            under Add a block div beneath the field containing the error message.\n            - side - Add an error icon to the right of the field, displaying the message in a popup on hover.\n            - none - Don't display any error message. This might be useful if you are implementing custom error display.\n            - [element id] - Add the error message directly to the innerHTML of the specified element.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "msgTarget",
+        "RefId": "msgTarget"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Forms.IDextopFormLabelable",
+        "TypeName": "System.Boolean",
+        "Description": "\n            true to disable displaying any error message set on this object. Defaults to false.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "preventMark",
+        "RefId": "preventMark"
+      }
+    ],
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Forms.IDextopFormLabelable",
+    "Description": "\n            Interface describing Ext.form.Labelable mixin.\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "IDextopFormLabelable",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "IDextopFormLabelable",
+  "SearchItems": [
+    {
+      "SectionName": "hideLabel",
+      "SectionDescription": "\n            Set to true to completely hide the label element (fieldLabel and labelSeparator).\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "hideEmptyLabel",
+      "SectionDescription": "\n            When set to true, the label element (fieldLabel and labelSeparator) will be automatically hidden if the fieldLabel is empty. Setting this to false will cause the empty label element to be rendered and space to be reserved for it; this is useful if you want a field without a label to line up with other labeled fields in the same form.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "fieldLabel",
+      "SectionDescription": "\n            The label for the field. It gets appended with the labelSeparator, and its position and sizing is determined by the labelAlign, labelWidth, and labelPad configs.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "invalidCls",
+      "SectionDescription": "\n            The CSS class to use when marking the component invalid (defaults to 'x-form-invalid')\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "labelAlign",
+      "SectionDescription": "\n            Controls the position and alignment of the fieldLabel. Valid values are:\n            - \"left\" (the default) - The label is positioned to the left of the field, with its text aligned to the left. Its width is determined by the labelWidth config.\n            - \"top\" - The label is positioned above the field.\n            - \"right\" - The label is positioned to the left of the field, with its text aligned to the right. Its width is determined by the labelWidth config.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "labelCls",
+      "SectionDescription": "\n            The CSS class to be applied to the label element. Defaults to 'x-form-item-label'.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "labelPad",
+      "SectionDescription": "\n            The amount of space in pixels between the fieldLabel and the input field. Defaults to 5.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "labelSeparator",
+      "SectionDescription": "\n            Character(s) to be inserted at the end of the label text.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "labelStyle",
+      "SectionDescription": "\n            A CSS style specification string to apply directly to this field's label.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "labelWidth",
+      "SectionDescription": "\n            The width of the fieldLabel in pixels. Only applicable if the labelAlign is set to \"left\" or \"right\". Defaults to 100.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "msgTarget",
+      "SectionDescription": "The location where the error message text should display. Must be one of the following values:\n            - qtip - Display a quick tip containing the message when the user hovers over the field. This is the default.\n            Ext.tip.QuickTipManager.init must have been called for this setting to work.\n             - title - Display the message in a default browser title attribute popup.\n            under Add a block div beneath the field containing the error message.\n            - side - Add an error icon to the right of the field, displaying the message in a popup on hover.\n            - none - Don't display any error message. This might be useful if you are implementing custom error display.\n            - [element id] - Add the error message directly to the innerHTML of the specified element.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "preventMark",
+      "SectionDescription": "\n            true to disable displaying any error message set on this object. Defaults to false.\n            ",
+      "SectionType": 4
+    }
+  ]
+}

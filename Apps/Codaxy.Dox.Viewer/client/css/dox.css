@@ -1,0 +1,280 @@
+﻿.dox, .dox table
+{
+    font-size: 10pt;
+}
+
+.dox
+{
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    color: #444;
+    -webkit-user-select: text !important;
+    padding: 5px 30px 5px 5px;
+}
+
+.dox a
+{
+    text-decoration: none;
+}
+
+.dox a:hover
+{
+    text-decoration: underline;
+}
+
+.dox p, .dox ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+.dox table
+{
+}
+
+.dox table .label
+{
+    padding: 3px 15px 3px 3px;
+    font-weight: bold;
+}
+
+.dox h1, .dox h2, .dox h3, .dox h4, .dox h5
+{
+    font-family: 'Trebuchet MS' , 'Bitstream Vera Sans' , verdana, lucida, arial, sans-serif;
+}
+
+.dox h1
+{
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+    color: #111;
+}
+
+.dox h2
+{
+    font-size: 1.2em;
+    margin-bottom: 0.2em;
+    margin-top: 0.8em;
+    color: #222;
+}
+
+.dox table.members
+{
+    border-collapse: collapse;
+}
+
+.dox table.members td, .dox table.members th
+{
+    border: 1px solid #ccc;
+    vertical-align: top;
+}
+
+.dox table.members td
+{
+    padding: 0.5em;
+}
+
+.dox table.members th
+{
+    padding: 3px;
+    background: url(../images/grid/grid3-hrow.gif) !important;
+}
+
+.dox table.members td.micon
+{
+    background: url(../images/grid/expand-bg.gif) !important;
+    width: 16px;
+    padding: 0;
+}
+
+.dox table.members .expanded td.micon
+{
+    background: url(../images/grid/expand-bg-over.gif) !important;
+}
+
+.dox table.members .expandable .micon a
+{
+    display: block;
+    text-decoration: none !important;
+    height: 30px;
+    width: 16px;
+    outline: none;
+    background: url(../images/grid/member-collapsed.gif) 5px 6px no-repeat;
+}
+
+.dox table.members .expandable .micon a:hover
+{
+    background-image: url(../images/grid/member-hover.gif) !important;
+}
+
+.dox table.members .expandable.expanded .micon a
+{
+    background-image: url(../images/grid/member-expanded.gif) !important;
+}
+
+.dox table.members .expandable div.details
+{
+    display: none;
+}
+
+.dox table.members .expandable.expanded div.details
+{
+    display: block;
+}
+
+.dox table.members td.key, .dox table.members td.sp-parameter 
+{
+	background-repeat: no-repeat;
+	background-position: 3px 8px;
+	text-indent: 20px !important;
+}
+
+.dox table.members td.primary-key 
+{
+	background-image: url(../images/icons/db/key.png) !important;
+}
+
+.dox table.members td.foreign-key 
+{
+	background-image: url(../images/icons/db/key-gray.png) !important;
+}
+
+.dox table.members td.sp-parameter.input
+{
+	background-image: url(../images/icons/db/arrow_right.png) !important;
+}
+
+.dox table.members td.sp-parameter.output
+{
+	background-image: url(../images/icons/db/arrow_left.png) !important;
+}
+
+
+
+.dox .member-name
+{
+    font-weight: bold;
+    color: #333399;
+}
+
+.dox .param-name
+{
+    color: #DA5505;
+}
+
+.dox .type-name
+{
+    color: #006600;
+}
+
+.dox .db-entity-name
+{
+	color: #000066;
+}
+
+.dox .summary
+{
+    color: #555;
+    margin: 5px 0 5px 10px;
+}
+
+.dox .example
+{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 12px 0;
+    padding: 6px 0;
+}
+
+.dox pre
+{
+    background-color: #F2F2F2;
+    padding: 3px;
+    margin: 3px 0 3px 0;
+    border: 1px solid #ddd;
+}
+
+.dox code
+{
+    font-size: 0.9em;
+    font-family: 'Lucida Console' , 'Courier New';
+}
+
+.dox .section
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+.dox .section li
+{
+    list-style: outside circle;
+	list-style-position: outside;
+	margin-left: 2em;	
+}
+
+.dox .section h4
+{
+    font-size: 0.9em;
+    margin-bottom: 0.2em;
+    color: #555;
+}
+
+.dox .footer
+{
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8em;
+    color: #777;
+}
+
+.dox .footer *
+{
+    vertical-align: bottom;
+}
+
+
+/* Class viewer toolbar */
+.icon-class {
+	background-image: url(../images/icons/tree/class_obj.gif) !important;
+}
+
+.icon-field {
+	background-image: url(../images/icons/toolbar/config.gif) !important;
+}
+
+.icon-event {
+	background-image: url(../images/icons/toolbar/event.gif) !important;
+}
+
+.icon-method {
+	background-image: url(../images/icons/toolbar/method.gif) !important;
+}
+
+.icon-property {
+	background-image: url(../images/icons/toolbar/prop.gif) !important;
+}
+
+.icon-database {
+	background-image: url(../images/icons/db/database2.png) !important;
+}
+
+.icon-table {
+	background-image: url(../images/icons/db/table.png) !important;
+}
+
+.icon-view {
+	background-image: url(../images/icons/db/table_multiple.png) !important;
+}
+
+.icon-stored-procedure {
+	background-image: url(../images/icons/db/stored-procedure.png) !important;
+}
+
+.icon-column {
+	background-image: url(../images/icons/db/table_row_insert.png) !important;
+}

@@ -1,0 +1,373 @@
+{
+  "FullName": "Codaxy.Dextop.Data.DextopMemoryDataProxy<T, Id>",
+  "Type": {
+    "BaseTypes": [
+      "System.Object",
+      "Codaxy.Dextop.Data.IDextopDataProxy<T>",
+      "Codaxy.Dextop.Data.IDextopReadProxy<T>"
+    ],
+    "Namespace": "Codaxy.Dextop.Data",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Func<T, Id>",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "idGetter",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Action<T, Id>",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "idSetter",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Func<Id, Id>",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "idGenerator",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Collections.Generic.IEnumerable<T>",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "initData",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopMemoryDataProxy<T, Id>",
+        "TypeName": null,
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "DextopMemoryDataProxy",
+        "RefId": "#ctor(System.Func{T,Id},System.Action{T,Id},System.Func{Id,Id},System.Collections.Generic.IEnumerable{T})"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<T, Id>>",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "idPropertyExpression",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Func<Id, Id>",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "idGenerator",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Collections.Generic.IEnumerable<T>",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "initData",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopMemoryDataProxy<T, Id>",
+        "TypeName": null,
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "DextopMemoryDataProxy",
+        "RefId": "#ctor(System.Linq.Expressions.Expression{System.Func{T,Id}},System.Func{Id,Id},System.Collections.Generic.IEnumerable{T})"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Collections.Generic.IEnumerable<T>",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "load",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopMemoryDataProxy<T, Id>",
+        "TypeName": "System.Void",
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "Load",
+        "RefId": "Load(System.Collections.Generic.IEnumerable{T})"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Collections.Generic.IList<T>",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "records",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopMemoryDataProxy<T, Id>",
+        "TypeName": "System.Collections.Generic.IList<T>",
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "Create",
+        "RefId": "Create(System.Collections.Generic.IList{T})"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Collections.Generic.IList<T>",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "records",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopMemoryDataProxy<T, Id>",
+        "TypeName": "System.Collections.Generic.IList<T>",
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "Destroy",
+        "RefId": "Destroy(System.Collections.Generic.IList{T})"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Collections.Generic.IList<T>",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "records",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopMemoryDataProxy<T, Id>",
+        "TypeName": "System.Collections.Generic.IList<T>",
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "Update",
+        "RefId": "Update(System.Collections.Generic.IList{T})"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.Data.DextopReadFilter",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "filter",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "",
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopMemoryDataProxy<T, Id>",
+        "TypeName": "Codaxy.Dextop.Data.DextopReadResult<T>",
+        "Description": "\n            \n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Read",
+        "RefId": "Read(Codaxy.Dextop.Data.DextopReadFilter)"
+      }
+    ],
+    "Parameters": null,
+    "Properties": [
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopMemoryDataProxy<T, Id>",
+        "TypeName": "System.Boolean",
+        "Description": "\n            Enable/disable paging.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Paging",
+        "RefId": "Paging"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopMemoryDataProxy<T, Id>",
+        "TypeName": "System.Boolean",
+        "Description": "\n            Store is readonly\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "ReadOnly",
+        "RefId": "ReadOnly"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopMemoryDataProxy<T, Id>",
+        "TypeName": "Id",
+        "Description": "\n            LastId used\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "LastId",
+        "RefId": "LastId"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": false,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopMemoryDataProxy<T, Id>",
+        "TypeName": "System.Int32",
+        "Description": "\n            Gets the number of the records in the store\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Count",
+        "RefId": "Count"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopMemoryDataProxy<T, Id>",
+        "TypeName": "T[]",
+        "Description": "\n            Returns the list of records currently in the store.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Records",
+        "RefId": "Records"
+      }
+    ],
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Data.DextopMemoryDataProxy<T, Id>",
+    "Description": "\n            In-memory data store proxy\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopMemoryDataProxy<T, Id>",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopMemoryDataProxy<T, Id>",
+  "SearchItems": [
+    {
+      "SectionName": "DextopMemoryDataProxy",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "DextopMemoryDataProxy",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Load",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Create",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Destroy",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Update",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Read",
+      "SectionDescription": "\n            \n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Paging",
+      "SectionDescription": "\n            Enable/disable paging.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "ReadOnly",
+      "SectionDescription": "\n            Store is readonly\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "LastId",
+      "SectionDescription": "\n            LastId used\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "Count",
+      "SectionDescription": "\n            Gets the number of the records in the store\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "Records",
+      "SectionDescription": "\n            Returns the list of records currently in the store.\n            ",
+      "SectionType": 4
+    }
+  ]
+}

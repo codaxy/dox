@@ -1,0 +1,406 @@
+{
+  "FullName": "Codaxy.Dextop.Data.DextopGridLookupColumnAttribute",
+  "Type": {
+    "BaseTypes": [
+      "Codaxy.Dextop.Data.DextopGridColumnAttribute",
+      "System.Runtime.InteropServices._Attribute"
+    ],
+    "Namespace": "Codaxy.Dextop.Data",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopGridLookupColumnAttribute",
+        "TypeName": null,
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "DextopGridLookupColumnAttribute",
+        "RefId": "#ctor()"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "Name of the member.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "memberName",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Type",
+            "Description": "Type of the member.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "memberType",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "",
+        "MemberFlag": 40,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopGridLookupColumnAttribute",
+        "TypeName": "Codaxy.Dextop.Data.DextopGridColumn",
+        "Description": "\n            Converts this attribute to the column object.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "ToGridHeader",
+        "RefId": "ToGridHeader(System.String,System.Type)"
+      }
+    ],
+    "Parameters": null,
+    "Properties": [
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopGridLookupColumnAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            Gets or sets the lookup id.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "lookupId",
+        "RefId": "lookupId"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopGridColumnAttribute",
+        "TypeName": "System.Int32",
+        "Description": "\n            Sorting order\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Order",
+        "RefId": "Order"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopGridColumnAttribute",
+        "TypeName": "System.Int32",
+        "Description": "\n            Gets or sets the column group. Default value is 0. Group value 1 will group all columns with value 0.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Group",
+        "RefId": "Group"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopGridColumnAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            A name which identifies this column. If not set, DataIndex is used.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "id",
+        "RefId": "id"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopGridColumnAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            Required. The name of the field in the model definition from which to draw the column's value.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "dataIndex",
+        "RefId": "dataIndex"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopGridColumnAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            Optional. The header text to be used as innerHTML (html tags are accepted) to display in the Grid view. Note: to have a clickable header with no text displayed use ' '.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "text",
+        "RefId": "text"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopGridColumnAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            Column type. One of int, float, date, datetime, time, bool...\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "type",
+        "RefId": "type"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopGridColumnAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            Header tooltip.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "tooltip",
+        "RefId": "tooltip"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopGridColumnAttribute",
+        "TypeName": "System.Boolean",
+        "Description": "\n            Mark that column is ReadOnly\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "readOnly",
+        "RefId": "readOnly"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopGridColumnAttribute",
+        "TypeName": "System.Int32",
+        "Description": "\n            Width of the column.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "width",
+        "RefId": "width"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopGridColumnAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            Create cell tooltip by template.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "tooltipTpl",
+        "RefId": "tooltipTpl"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopGridColumnAttribute",
+        "TypeName": "System.Boolean",
+        "Description": "\n            Value is required (data entry)\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "required",
+        "RefId": "required"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopGridColumnAttribute",
+        "TypeName": "System.Double",
+        "Description": "\n            Each child item with a flex property will be flexed horizontally according to each item's relative flex value compared to the sum of all items with a flex value specified. \n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "flex",
+        "RefId": "flex"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopGridColumnAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            Align left, right, center. By default numbers are aligned right and dates are centered.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "align",
+        "RefId": "align"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopGridColumnAttribute",
+        "TypeName": "System.Boolean",
+        "Description": "\n            Mark that column is sortable\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "sortable",
+        "RefId": "sortable"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopGridColumnAttribute",
+        "TypeName": "System.String",
+        "Description": "\n            Name of the renderer to be used.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "renderer",
+        "RefId": "renderer"
+      }
+    ],
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Data.DextopGridLookupColumnAttribute",
+    "Description": "\n            Lookup column.\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopGridLookupColumnAttribute",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopGridLookupColumnAttribute",
+  "SearchItems": [
+    {
+      "SectionName": "DextopGridLookupColumnAttribute",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "ToGridHeader",
+      "SectionDescription": "\n            Converts this attribute to the column object.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "lookupId",
+      "SectionDescription": "\n            Gets or sets the lookup id.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "Order",
+      "SectionDescription": "\n            Sorting order\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "Group",
+      "SectionDescription": "\n            Gets or sets the column group. Default value is 0. Group value 1 will group all columns with value 0.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "id",
+      "SectionDescription": "\n            A name which identifies this column. If not set, DataIndex is used.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "dataIndex",
+      "SectionDescription": "\n            Required. The name of the field in the model definition from which to draw the column's value.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "text",
+      "SectionDescription": "\n            Optional. The header text to be used as innerHTML (html tags are accepted) to display in the Grid view. Note: to have a clickable header with no text displayed use ' '.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "type",
+      "SectionDescription": "\n            Column type. One of int, float, date, datetime, time, bool...\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "tooltip",
+      "SectionDescription": "\n            Header tooltip.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "readOnly",
+      "SectionDescription": "\n            Mark that column is ReadOnly\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "width",
+      "SectionDescription": "\n            Width of the column.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "tooltipTpl",
+      "SectionDescription": "\n            Create cell tooltip by template.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "required",
+      "SectionDescription": "\n            Value is required (data entry)\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "flex",
+      "SectionDescription": "\n            Each child item with a flex property will be flexed horizontally according to each item's relative flex value compared to the sum of all items with a flex value specified. \n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "align",
+      "SectionDescription": "\n            Align left, right, center. By default numbers are aligned right and dates are centered.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "sortable",
+      "SectionDescription": "\n            Mark that column is sortable\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "renderer",
+      "SectionDescription": "\n            Name of the renderer to be used.\n            ",
+      "SectionType": 4
+    }
+  ]
+}

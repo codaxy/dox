@@ -1,0 +1,157 @@
+{
+  "FullName": "Codaxy.Dextop.DextopConfig",
+  "Type": {
+    "BaseTypes": [
+      "System.Collections.Generic.Dictionary<System.String, System.Object>",
+      "System.Collections.Generic.IDictionary<System.String, System.Object>",
+      "System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.Object>>",
+      "System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String, System.Object>>",
+      "System.Collections.IEnumerable",
+      "System.Collections.IDictionary",
+      "System.Collections.ICollection",
+      "System.Runtime.Serialization.ISerializable",
+      "System.Runtime.Serialization.IDeserializationCallback"
+    ],
+    "Namespace": "Codaxy.Dextop",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopConfig",
+        "TypeName": null,
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "DextopConfig",
+        "RefId": "#ctor()"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Collections.Generic.IDictionary<System.String, System.Object>[]",
+            "Description": "The data.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "data",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopConfig",
+        "TypeName": "System.Void",
+        "Description": "\n            Applies the specified data.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Apply",
+        "RefId": "Apply(System.Collections.Generic.IDictionary{System.String,System.Object}[])"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "property",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 2,
+            "TypeName": "T",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "value",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopConfig",
+        "TypeName": "System.Boolean",
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "TryGet",
+        "RefId": "TryGet``1(System.String,T)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The property name.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "property",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "T",
+            "Description": "The default value.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "defaultValue",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "Value.",
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopConfig",
+        "TypeName": "T",
+        "Description": "\n            Safely gets the property value. If value is not found or invalid, default value is used.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "SafeGet",
+        "RefId": "SafeGet``1(System.String,``0)"
+      }
+    ],
+    "Parameters": null,
+    "Properties": null,
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.DextopConfig",
+    "Description": "\n            Extensible configuration object suited for sending of JSON data to the client.\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopConfig",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopConfig",
+  "SearchItems": [
+    {
+      "SectionName": "DextopConfig",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Apply",
+      "SectionDescription": "\n            Applies the specified data.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "TryGet",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "SafeGet",
+      "SectionDescription": "\n            Safely gets the property value. If value is not found or invalid, default value is used.\n            ",
+      "SectionType": 5
+    }
+  ]
+}

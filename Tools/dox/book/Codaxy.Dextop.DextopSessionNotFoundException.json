@@ -1,0 +1,49 @@
+{
+  "FullName": "Codaxy.Dextop.DextopSessionNotFoundException",
+  "Type": {
+    "BaseTypes": [
+      "Codaxy.Dextop.DextopException",
+      "System.Runtime.Serialization.ISerializable",
+      "System.Runtime.InteropServices._Exception"
+    ],
+    "Namespace": "Codaxy.Dextop",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopSessionNotFoundException",
+        "TypeName": null,
+        "Description": "\n            Session not found or expired exception.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "DextopSessionNotFoundException",
+        "RefId": "#ctor()"
+      }
+    ],
+    "Parameters": null,
+    "Properties": null,
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.DextopSessionNotFoundException",
+    "Description": "\n            Session not found or expired exception.\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopSessionNotFoundException",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopSessionNotFoundException",
+  "SearchItems": [
+    {
+      "SectionName": "DextopSessionNotFoundException",
+      "SectionDescription": "\n            Session not found or expired exception.\n            ",
+      "SectionType": 5
+    }
+  ]
+}

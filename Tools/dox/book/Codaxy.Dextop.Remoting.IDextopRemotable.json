@@ -1,0 +1,87 @@
+{
+  "FullName": "Codaxy.Dextop.Remoting.IDextopRemotable",
+  "Type": {
+    "BaseTypes": [
+      "System.IDisposable"
+    ],
+    "Namespace": "Codaxy.Dextop.Remoting",
+    "ProtectionLevel": 0,
+    "TypeKind": 2,
+    "Methods": [
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.DextopRemote",
+            "Description": "Remote object used for communication with the client-side object.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "remote",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.DextopConfig",
+            "Description": "Configuration of the object to be created on the client side.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "config",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Remoting.IDextopRemotable",
+        "TypeName": "System.Void",
+        "Description": "\n            Initializes the remotable object. \n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "InitRemotable",
+        "RefId": "InitRemotable(Codaxy.Dextop.DextopRemote,Codaxy.Dextop.DextopConfig)"
+      }
+    ],
+    "Parameters": null,
+    "Properties": [
+      {
+        "CanRead": true,
+        "CanWrite": false,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 16,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Remoting.IDextopRemotable",
+        "TypeName": "Codaxy.Dextop.DextopRemote",
+        "Description": "\n            Gets the remote object used for client-side communication.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Remote",
+        "RefId": "Remote"
+      }
+    ],
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Remoting.IDextopRemotable",
+    "Description": "\n            Implement IDextopRemotable to allow RPC calls from the client. \n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "IDextopRemotable",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "IDextopRemotable",
+  "SearchItems": [
+    {
+      "SectionName": "InitRemotable",
+      "SectionDescription": "\n            Initializes the remotable object. \n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Remote",
+      "SectionDescription": "\n            Gets the remote object used for client-side communication.\n            ",
+      "SectionType": 4
+    }
+  ]
+}

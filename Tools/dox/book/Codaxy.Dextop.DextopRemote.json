@@ -1,0 +1,1157 @@
+{
+  "FullName": "Codaxy.Dextop.DextopRemote",
+  "Type": {
+    "BaseTypes": [
+      "System.Object"
+    ],
+    "Namespace": "Codaxy.Dextop",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.DextopContext",
+            "Description": "The context.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "context",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The remote id.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "remoteId",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": null,
+            "DescriptionTree": [
+              {
+                "Type": 0,
+                "Text": "if set to ",
+                "Ref": null,
+                "Children": null
+              },
+              {
+                "Type": 0,
+                "Text": " [sub remote].",
+                "Ref": null,
+                "Children": null
+              }
+            ],
+            "HasDescription": true,
+            "Name": "subRemote",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": null,
+        "Description": null,
+        "DescriptionTree": [
+          {
+            "Type": 0,
+            "Text": "\n            Initializes a new instance of the ",
+            "Ref": null,
+            "Children": null
+          },
+          {
+            "Type": 3,
+            "Text": "Codaxy.Dextop.DextopRemote",
+            "Ref": "Codaxy.Dextop.DextopRemote",
+            "Children": null
+          },
+          {
+            "Type": 0,
+            "Text": " class.\n            ",
+            "Ref": null,
+            "Children": null
+          }
+        ],
+        "HasDescription": true,
+        "Name": "DextopRemote",
+        "RefId": "#ctor(Codaxy.Dextop.DextopContext,System.String,System.Boolean)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.IDisposable",
+            "Description": "The disposable.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "disposable",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.Void",
+        "Description": "\n            Tracks the disposable object. Tracked objects will be disposed after this instance is disposed.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "TrackDisposable",
+        "RefId": "TrackDisposable(System.IDisposable)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The name.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.Remoting.IDextopRemotable",
+            "Description": "The remotable.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "remotable",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The remote id.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "remoteId",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": null,
+            "DescriptionTree": [
+              {
+                "Type": 0,
+                "Text": "if set to ",
+                "Ref": null,
+                "Children": null
+              },
+              {
+                "Type": 0,
+                "Text": " [sub remote].",
+                "Ref": null,
+                "Children": null
+              }
+            ],
+            "HasDescription": true,
+            "Name": "subRemote",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": null,
+            "DescriptionTree": [
+              {
+                "Type": 0,
+                "Text": "if set to ",
+                "Ref": null,
+                "Children": null
+              },
+              {
+                "Type": 0,
+                "Text": " [own].",
+                "Ref": null,
+                "Children": null
+              }
+            ],
+            "HasDescription": true,
+            "Name": "own",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.Void",
+        "Description": "\n            Adds the remotable component. Remotable component configuration will be available on the client side.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "AddRemotableComponent",
+        "RefId": "AddRemotableComponent(System.String,Codaxy.Dextop.Remoting.IDextopRemotable,System.String,System.Boolean,System.Boolean)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.Remoting.IDextopRemotable",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "remotable",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "remoteId",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "subRemote",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "own",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "",
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "Codaxy.Dextop.DextopConfig",
+        "Description": "\n            Register remotable object without registering it's config.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "TrackRemotableComponent",
+        "RefId": "TrackRemotableComponent(Codaxy.Dextop.Remoting.IDextopRemotable,System.String,System.Boolean,System.Boolean)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The name.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Object",
+            "Description": "The o.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "o",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": null,
+            "DescriptionTree": [
+              {
+                "Type": 0,
+                "Text": "if set to ",
+                "Ref": null,
+                "Children": null
+              },
+              {
+                "Type": 0,
+                "Text": " component will be disposed.",
+                "Ref": null,
+                "Children": null
+              }
+            ],
+            "HasDescription": true,
+            "Name": "own",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.Void",
+        "Description": "\n            Adds the component.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "AddComponent",
+        "RefId": "AddComponent(System.String,System.Object,System.Boolean)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.Data.IDextopDataProxy<T>",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "crud",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "remoteId",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "subRemote",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "own",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.Void",
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "AddStore",
+        "RefId": "AddStore``1(System.String,Codaxy.Dextop.Data.IDextopDataProxy{T},System.String,System.Boolean,System.Boolean)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.Data.IDextopReadProxy<T>",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "crud",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "remoteId",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "subRemote",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "own",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.Void",
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "AddStore",
+        "RefId": "AddStore``1(System.String,Codaxy.Dextop.Data.IDextopReadProxy{T},System.String,System.Boolean,System.Boolean)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Func<Codaxy.Dextop.Data.DextopReadFilter, Codaxy.Dextop.Data.DextopReadResult<T>>",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "read",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "remoteId",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "subRemote",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.Void",
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "AddStore",
+        "RefId": "AddStore``1(System.String,System.Func{Codaxy.Dextop.Data.DextopReadFilter,Codaxy.Dextop.Data.DextopReadResult{T}},System.String,System.Boolean)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Func<Codaxy.Dextop.Data.DextopReadFilter, System.Collections.Generic.IEnumerable<T>>",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "read",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "remoteId",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "subRemote",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.Void",
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "AddStore",
+        "RefId": "AddStore``1(System.String,System.Func{Codaxy.Dextop.Data.DextopReadFilter,System.Collections.Generic.IEnumerable{T}},System.String,System.Boolean)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Func<Codaxy.Dextop.Data.DextopReadFilter, System.Collections.Generic.IList<T>>",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "read",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "remoteId",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "subRemote",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.Void",
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "AddStore",
+        "RefId": "AddStore``1(System.String,System.Func{Codaxy.Dextop.Data.DextopReadFilter,System.Collections.Generic.IList{T}},System.String,System.Boolean)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Collections.Generic.IList<T>",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "data",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "remoteId",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "subRemote",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.Void",
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "AddStore",
+        "RefId": "AddStore``1(System.String,System.Collections.Generic.IList{T},System.String,System.Boolean)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The name.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "name",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.Void",
+        "Description": "\n            Adds the grid columns.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "AddGridColumns",
+        "RefId": "AddGridColumns``1(System.String)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The name.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Object[]",
+            "Description": "The data.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "data",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.Void",
+        "Description": "\n            Adds the lookup data.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "AddLookupData",
+        "RefId": "AddLookupData(System.String,System.Object[])"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String[]",
+            "Description": "The name.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "name",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.Void",
+        "Description": "\n            Adds the shared lookup data.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "AddSharedLookupData",
+        "RefId": "AddSharedLookupData(System.String[])"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.Data.DextopObservableStore<Id, T>",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "store",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "remoteId",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": null,
+            "DescriptionTree": null,
+            "HasDescription": false,
+            "Name": "subRemote",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.Void",
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "AddLiveStore",
+        "RefId": "AddLiveStore``2(System.String,Codaxy.Dextop.Data.DextopObservableStore{Id,T},System.String,System.Boolean)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The name.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "name",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.Data.DextopLiveStore",
+            "Description": "The live store.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "liveStore",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The remote id.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "remoteId",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": null,
+            "DescriptionTree": [
+              {
+                "Type": 0,
+                "Text": "if set to ",
+                "Ref": null,
+                "Children": null
+              },
+              {
+                "Type": 0,
+                "Text": " [sub remote].",
+                "Ref": null,
+                "Children": null
+              }
+            ],
+            "HasDescription": true,
+            "Name": "subRemote",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.Void",
+        "Description": "\n            Adds the live store.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "AddLiveStore",
+        "RefId": "AddLiveStore(System.String,Codaxy.Dextop.Data.DextopLiveStore,System.String,System.Boolean)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Object[]",
+            "Description": "List of messages to be sent.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "msgs",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.Void",
+        "Description": "\n            Sends the message to the clien.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "SendMessage",
+        "RefId": "SendMessage(System.Object[])"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.Remoting.IDextopRemotable",
+            "Description": "The remotable.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "remotable",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The remote id.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "remoteId",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": null,
+            "DescriptionTree": [
+              {
+                "Type": 0,
+                "Text": "if set to ",
+                "Ref": null,
+                "Children": null
+              },
+              {
+                "Type": 0,
+                "Text": " [sub remote].",
+                "Ref": null,
+                "Children": null
+              }
+            ],
+            "HasDescription": true,
+            "Name": "subRemote",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "",
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "Codaxy.Dextop.DextopConfig",
+        "Description": "\n            Registers the specified remotable.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Register",
+        "RefId": "Register(Codaxy.Dextop.Remoting.IDextopRemotable,System.String,System.Boolean)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.DextopNotification",
+            "Description": "The notification.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "notification",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.Void",
+        "Description": "\n            Sends the notification to the client side.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "SendNotification",
+        "RefId": "SendNotification(Codaxy.Dextop.DextopNotification)"
+      },
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.Void",
+        "Description": "\n            Releases unmanaged and - optionally - managed resources\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Dispose",
+        "RefId": "Dispose()"
+      }
+    ],
+    "Parameters": null,
+    "Properties": [
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "Codaxy.Dextop.DextopContext",
+        "Description": "\n            Gets the context.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Context",
+        "RefId": "Context"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.Action<System.Web.HttpContext>",
+        "Description": "\n            Gets or sets the on process ajax request handler.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "OnProcessAjaxRequest",
+        "RefId": "OnProcessAjaxRequest"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.Func<System.Exception, System.Object>",
+        "Description": "\n            Gets or sets the on map remoting exception delegate.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "OnMapRemotingException",
+        "RefId": "OnMapRemotingException"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.String",
+        "Description": "\n            Gets or sets the type of the object on the client side.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "RemoteHostType",
+        "RefId": "RemoteHostType"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.String",
+        "Description": "\n            Gets the remote id.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "RemoteId",
+        "RefId": "RemoteId"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.DextopRemote",
+        "TypeName": "System.Boolean",
+        "Description": "\n            Gets a value indicating whether this instance is client initiated.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "IsClientInitiated",
+        "RefId": "IsClientInitiated"
+      }
+    ],
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.DextopRemote",
+    "Description": "\n            A class responsible for communication with the client-side.\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopRemote",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopRemote",
+  "SearchItems": [
+    {
+      "SectionName": "DextopRemote",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "TrackDisposable",
+      "SectionDescription": "\n            Tracks the disposable object. Tracked objects will be disposed after this instance is disposed.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddRemotableComponent",
+      "SectionDescription": "\n            Adds the remotable component. Remotable component configuration will be available on the client side.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "TrackRemotableComponent",
+      "SectionDescription": "\n            Register remotable object without registering it's config.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddComponent",
+      "SectionDescription": "\n            Adds the component.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddStore",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddStore",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddStore",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddStore",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddStore",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddStore",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddGridColumns",
+      "SectionDescription": "\n            Adds the grid columns.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddLookupData",
+      "SectionDescription": "\n            Adds the lookup data.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddSharedLookupData",
+      "SectionDescription": "\n            Adds the shared lookup data.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddLiveStore",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "AddLiveStore",
+      "SectionDescription": "\n            Adds the live store.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "SendMessage",
+      "SectionDescription": "\n            Sends the message to the clien.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Register",
+      "SectionDescription": "\n            Registers the specified remotable.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "SendNotification",
+      "SectionDescription": "\n            Sends the notification to the client side.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Dispose",
+      "SectionDescription": "\n            Releases unmanaged and - optionally - managed resources\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Context",
+      "SectionDescription": "\n            Gets the context.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "OnProcessAjaxRequest",
+      "SectionDescription": "\n            Gets or sets the on process ajax request handler.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "OnMapRemotingException",
+      "SectionDescription": "\n            Gets or sets the on map remoting exception delegate.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "RemoteHostType",
+      "SectionDescription": "\n            Gets or sets the type of the object on the client side.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "RemoteId",
+      "SectionDescription": "\n            Gets the remote id.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "IsClientInitiated",
+      "SectionDescription": "\n            Gets a value indicating whether this instance is client initiated.\n            ",
+      "SectionType": 4
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "FullName": "Codaxy.Dextop.Tools.DextopFileUtil",
+  "Type": {
+    "BaseTypes": [
+      "System.Object"
+    ],
+    "Namespace": "Codaxy.Dextop.Tools",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopFileUtil",
+        "TypeName": null,
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "DextopFileUtil",
+        "RefId": "#ctor()"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Collections.Generic.IEnumerable<System.String>",
+            "Description": "List of file paths.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "filePaths",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "Concatenated content of the files.",
+        "MemberFlag": 4,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopFileUtil",
+        "TypeName": "System.String",
+        "Description": "\n            Concates the files with given paths.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "ConcateFiles",
+        "RefId": "ConcateFiles(System.Collections.Generic.IEnumerable{System.String})"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String[]",
+            "Description": "List of file paths.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "filePath",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "The cache buster value.",
+        "MemberFlag": 4,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopFileUtil",
+        "TypeName": "System.Int32",
+        "Description": "\n            Calculates the cache buster by observing the last write time property of the specified files.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "CalculateCacheBuster",
+        "RefId": "CalculateCacheBuster(System.String[])"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Collections.Generic.IEnumerable<System.String>",
+            "Description": "List of file paths.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "filePaths",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 2,
+            "TypeName": "System.DateTime",
+            "Description": "The latest file write time.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "latestFileWriteTime",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "\n            The cache buster value.\n            ",
+        "MemberFlag": 4,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopFileUtil",
+        "TypeName": "System.Int32",
+        "Description": "\n            Calculates the cache buster by observing the last write time property of the specified files.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "CalculateCacheBuster",
+        "RefId": "CalculateCacheBuster(System.Collections.Generic.IEnumerable{System.String},System.DateTime)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The js.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "js",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Boolean",
+            "Description": null,
+            "DescriptionTree": [
+              {
+                "Type": 0,
+                "Text": "if set to ",
+                "Ref": null,
+                "Children": null
+              },
+              {
+                "Type": 0,
+                "Text": " [obfuscate].",
+                "Ref": null,
+                "Children": null
+              }
+            ],
+            "HasDescription": true,
+            "Name": "obfuscate",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "",
+        "MemberFlag": 4,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopFileUtil",
+        "TypeName": "System.String",
+        "Description": "\n            Minifies the JS.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "MinifyJs",
+        "RefId": "MinifyJs(System.String,System.Boolean)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The CSS.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "css",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": "",
+        "MemberFlag": 4,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopFileUtil",
+        "TypeName": "System.String",
+        "Description": "\n            Minifies the CSS.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "MinifyCss",
+        "RefId": "MinifyCss(System.String)"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "The file path.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "filePath",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.String",
+            "Description": "Content of the file.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "fileContent",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 4,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Tools.DextopFileUtil",
+        "TypeName": "System.Void",
+        "Description": "\n            Writes the text file.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "WriteTextFile",
+        "RefId": "WriteTextFile(System.String,System.String)"
+      }
+    ],
+    "Parameters": null,
+    "Properties": null,
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Tools.DextopFileUtil",
+    "Description": "\n            Set of useful file utilites.\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopFileUtil",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopFileUtil",
+  "SearchItems": [
+    {
+      "SectionName": "DextopFileUtil",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "ConcateFiles",
+      "SectionDescription": "\n            Concates the files with given paths.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "CalculateCacheBuster",
+      "SectionDescription": "\n            Calculates the cache buster by observing the last write time property of the specified files.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "CalculateCacheBuster",
+      "SectionDescription": "\n            Calculates the cache buster by observing the last write time property of the specified files.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "MinifyJs",
+      "SectionDescription": "\n            Minifies the JS.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "MinifyCss",
+      "SectionDescription": "\n            Minifies the CSS.\n            ",
+      "SectionType": 5
+    },
+    {
+      "SectionName": "WriteTextFile",
+      "SectionDescription": "\n            Writes the text file.\n            ",
+      "SectionType": 5
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "FullName": "Codaxy.Dextop.Remoting.DextopEnumPreprocessor",
+  "Type": {
+    "BaseTypes": [
+      "System.Object",
+      "Codaxy.Dextop.IDextopAssemblyPreprocessor"
+    ],
+    "Namespace": "Codaxy.Dextop.Remoting",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Remoting.DextopEnumPreprocessor",
+        "TypeName": null,
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "DextopEnumPreprocessor",
+        "RefId": "#ctor()"
+      },
+      {
+        "Parameters": [
+          {
+            "ParameterFlags": 0,
+            "TypeName": "Codaxy.Dextop.DextopApplication",
+            "Description": "The application.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "application",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.Collections.Generic.IList<System.Reflection.Assembly>",
+            "Description": "The assemblies.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "assemblies",
+            "RefId": null
+          },
+          {
+            "ParameterFlags": 0,
+            "TypeName": "System.IO.Stream",
+            "Description": "The output stream.",
+            "DescriptionTree": null,
+            "HasDescription": true,
+            "Name": "outputStream",
+            "RefId": null
+          }
+        ],
+        "ReturnDescription": null,
+        "MemberFlag": 8,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Remoting.DextopEnumPreprocessor",
+        "TypeName": "System.Void",
+        "Description": "\n            Processes the assemblies and generates the code.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "ProcessAssemblies",
+        "RefId": "ProcessAssemblies(Codaxy.Dextop.DextopApplication,System.Collections.Generic.IList{System.Reflection.Assembly},System.IO.Stream)"
+      }
+    ],
+    "Parameters": null,
+    "Properties": null,
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Remoting.DextopEnumPreprocessor",
+    "Description": "\n            Generates remote enumerations.\n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopEnumPreprocessor",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopEnumPreprocessor",
+  "SearchItems": [
+    {
+      "SectionName": "DextopEnumPreprocessor",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "ProcessAssemblies",
+      "SectionDescription": "\n            Processes the assemblies and generates the code.\n            ",
+      "SectionType": 5
+    }
+  ]
+}

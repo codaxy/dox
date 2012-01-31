@@ -1,0 +1,128 @@
+{
+  "FullName": "Codaxy.Dextop.Data.DextopStoreEvent",
+  "Type": {
+    "BaseTypes": [
+      "System.Object"
+    ],
+    "Namespace": "Codaxy.Dextop.Data",
+    "ProtectionLevel": 0,
+    "TypeKind": 1,
+    "Methods": [
+      {
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 1,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopStoreEvent",
+        "TypeName": null,
+        "Description": null,
+        "DescriptionTree": null,
+        "HasDescription": false,
+        "Name": "DextopStoreEvent",
+        "RefId": "#ctor()"
+      }
+    ],
+    "Parameters": null,
+    "Properties": [
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopStoreEvent",
+        "TypeName": "System.Boolean",
+        "Description": "\n            Gets or sets a value indicating whether store data is cleard;\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Clear",
+        "RefId": "Clear"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopStoreEvent",
+        "TypeName": "System.Collections.Generic.IList<System.Object>",
+        "Description": "\n            List of updated records.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Update",
+        "RefId": "Update"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopStoreEvent",
+        "TypeName": "System.Collections.Generic.IList<System.Object>",
+        "Description": "\n            List of created records.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Create",
+        "RefId": "Create"
+      },
+      {
+        "CanRead": true,
+        "CanWrite": true,
+        "Parameters": null,
+        "ReturnDescription": null,
+        "MemberFlag": 0,
+        "ProtectionLevel": 0,
+        "DeclaringType": "Codaxy.Dextop.Data.DextopStoreEvent",
+        "TypeName": "System.Collections.Generic.IList<System.Object>",
+        "Description": "\n            List of destroyed records.\n            ",
+        "DescriptionTree": null,
+        "HasDescription": true,
+        "Name": "Destroy",
+        "RefId": "Destroy"
+      }
+    ],
+    "Fields": null,
+    "Events": null,
+    "MemberDelegates": null,
+    "FullName": "Codaxy.Dextop.Data.DextopStoreEvent",
+    "Description": "\n            \n            ",
+    "DescriptionTree": null,
+    "HasDescription": true,
+    "Name": "DextopStoreEvent",
+    "RefId": null
+  },
+  "DbElement": null,
+  "FormatCode": "cs",
+  "Title": "DextopStoreEvent",
+  "SearchItems": [
+    {
+      "SectionName": "DextopStoreEvent",
+      "SectionDescription": null,
+      "SectionType": 5
+    },
+    {
+      "SectionName": "Clear",
+      "SectionDescription": "\n            Gets or sets a value indicating whether store data is cleard;\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "Update",
+      "SectionDescription": "\n            List of updated records.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "Create",
+      "SectionDescription": "\n            List of created records.\n            ",
+      "SectionType": 4
+    },
+    {
+      "SectionName": "Destroy",
+      "SectionDescription": "\n            List of destroyed records.\n            ",
+      "SectionType": 4
+    }
+  ]
+}
