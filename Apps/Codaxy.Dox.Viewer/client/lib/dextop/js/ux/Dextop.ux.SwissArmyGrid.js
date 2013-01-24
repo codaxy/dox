@@ -23,6 +23,7 @@ Ext.define('Dextop.ux.SwissArmyGrid', {
 
 	confirmDeleteText: 'Are you sure you want to remove the selected records?',
 	pageSizeText: 'Size: ',
+	pageSizeSelect: false, //add page size combo to paging toolbar
 
 	defaultRowEditingOptions: {
 		removePhantomsOnCancel: true
@@ -35,8 +36,10 @@ Ext.define('Dextop.ux.SwissArmyGrid', {
 		if (!this.remote)
 			throw 'Swiss grid panel requires remote object to be configured.';
 
-		this.store = this.remote.createStore(this.storeName || this.model, this.storeOptions);
-		delete this.storeOptions;
+		if (!this.store) {
+			this.store = this.remote.createStore(this.storeName || this.model, this.storeOptions);
+			delete this.storeOptions;
+		}
 
 		this.columnModelOptions = this.columnModelOptions || {};
 		Ext.apply(this.columnModelOptions, {
@@ -61,10 +64,12 @@ Ext.define('Dextop.ux.SwissArmyGrid', {
 				throw 'Grid does not support paging and bbar. Use them exclusively.';
 			this.pagingToolbarOptions = this.pagingToolbarOptions || {};
 			this.pagingToolbarOptions.items = Ext.Array.from(this.pagingToolbarOptions.items) || [];
-			this.pagingToolbarOptions.items.push(['-', this.pageSizeText, {
-				xtype: 'pagesizecombo',
-				store: this.store
-			}]);
+			if (this.pageSizeSelect) {
+				this.pagingToolbarOptions.items.push('-', this.pageSizeText, {
+					xtype: 'pagesizecombo',
+					store: this.store
+				});
+			}
 			this.bbar = Ext.create('Ext.PagingToolbar', Ext.apply({
 				store: this.store
 			}, this.pagingToolbarOptions));
@@ -173,7 +178,7 @@ Ext.define('Dextop.ux.SwissArmyGrid', {
 				iconCls: this.getActionIconCls(action),
 				key: [Ext.EventObject.NUM_MINUS, Ext.EventObject.DELETE],
 				enableOnSingle: true,
-				enableOnMultiple: true,
+				enableOnMulti: true,
 				scope: this,
 				handler: function () {
 					this.cancelEditing();
@@ -276,27 +281,24 @@ Ext.define('Dextop.ux.SwissArmyGrid', {
 		this.rowEditing.startEdit(this.store.indexOf(rec), this.rowEditing.firstEditor);
 	},
 
-	formEdit: function (rec, insert) {
-		this.editingOptions = this.editingOptions || {};
-		if (!this.editingOptions.formItemsType)
-			this.editingOptions.formItemsType = this.store.model.modelName.replace('.model.', '.form.');
-		var formEditor = Ext.create('Dextop.ux.FormEditorWindow', Ext.apply({
-			remote: this.remote,
-			data: rec.data,
-			listeners: {
-				scope: this,
-				save: function (w, form, fieldValues) {
-					form.getForm().updateRecord(rec);
-					if (insert) {
-						var index = this.store.getCount();
-						this.store.insert(index, rec);
-					}
-					w.close();
-				}
-			}
-		}, this.editingOptions));
-		formEditor.show();
-	},
+    formEdit: function (rec, insert) {
+        this.editingOptions = this.editingOptions || {};
+        if (!this.editingOptions.formItemsType)
+            this.editingOptions.formItemsType = this.store.model.modelName.replace('.model.', '.form.');
+        var formEditor = Ext.create('Dextop.ux.FormEditorWindow', Ext.apply({
+            remote: this.remote,
+            data: rec.data
+        }, this.editingOptions));
+        formEditor.on('save', function (w, form, fieldValues) {
+            form.getForm().updateRecord(rec);
+            if (insert) {
+                var index = this.store.getCount();
+                this.store.insert(index, rec);
+            }
+            w.close();
+        }, this);
+        formEditor.show();
+    },
 
 	getSelectedRecords: function () {
 		return this.getSelectionModel().getSelection();

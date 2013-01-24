@@ -19,14 +19,14 @@ Ext.define('Dextop.data.GridColumnsFactory', {
 				field: {
 					xtype: 'numberfield'
 				},
-				renderer: Ext.util.Format.numberRenderer()
+				renderer: 'number'
 			},
 			'float': {
 				align: 'right',
 				field: {
 					xtype: 'numberfield'
 				},
-				renderer: Ext.util.Format.numberRenderer()
+				renderer: 'number'
 			},
 			'string': {
 				field: {
@@ -38,7 +38,7 @@ Ext.define('Dextop.data.GridColumnsFactory', {
 				field: {
 					xtype: 'datefield'
 				},
-				renderer: Ext.util.Format.dateRenderer(),
+				renderer: 'date',
 				width: 90
 			},
 			'time': {
@@ -46,11 +46,7 @@ Ext.define('Dextop.data.GridColumnsFactory', {
 				field: {
 					xtype: 'timefield'
 				},
-				renderer: function (v) {
-					if (!v)
-						return v;
-					return Ext.util.Format.date(v, 'g:i A');
-				},
+				renderer: 'time',
 				width: 80
 			},
 			'datetime': {
@@ -58,10 +54,10 @@ Ext.define('Dextop.data.GridColumnsFactory', {
 				field: {
 					xtype: 'textfield'
 				},
-				renderer: function(v) {
-					if (!v) 
+				renderer: function (v) {
+					if (!v)
 						return v;
-					return Ext.util.Format.date(v, Ext.Date.defaultFormat + ' g:i A');
+					return Ext.util.Format.date(v, (Ext.Date.defaultFormat || Ext.util.Format.dateFormat) + ' ' + (Ext.form.field.Time.prototype.format || 'g:i A'));
 				}
 			},
 			'boolean': {
@@ -136,19 +132,34 @@ Ext.define('Dextop.data.GridColumnsFactory', {
 					if (defaults.factory)
 						defaults.factory(c, options);
 					else
-						Ext.applyIf(c, defaults);
+						Ext.applyIf(c, Ext.clone(defaults));
 			}
+
 			if (c.readonly)
 				delete c.field;
 
-			if (typeof c.renderer === 'string')
+			if (c.field && c.required)
+				c.field.allowBlank = false;
+
+			if (typeof c.renderer === 'string') {
+				c.rendererOptions = c.rendererOptions || {};
+				if (c.format) {
+					c.rendererOptions.format = c.format;
+					delete c.format;
+				}
 				c.renderer = Dextop.data.RendererFactory.create(c.renderer, c.rendererOptions);
+			}
 
 			if (options && options.renderers && options.renderers[c.dataIndex])
 				c.renderer = options.renderers[c.dataIndex];
 
 			if (!Ext.isDefined(c.menuDisabled))
-				c.menuDisabled = true;
+			    c.menuDisabled = true;
+
+			if (c.tpl) {
+			    c.renderer = Dextop.data.RendererFactory.create('tpl', { tpl: c.tpl });
+			    delete c.tpl;
+			}
 
 			if (c.tooltipTpl) {
 				c.renderer = Dextop.data.RendererFactory.create('tooltipTpl', {
@@ -157,6 +168,10 @@ Ext.define('Dextop.data.GridColumnsFactory', {
 				});
 				delete c.tooltipTpl;
 			}
+
+			//sometimes header text is too long, so it's useful to display the tooltip with header text
+			if (!c.tooltip && c.text)
+				c.tooltip = c.text;
 
 			if (c.columns)
 				c.columns = Dextop.data.GridColumnsFactory.create(c.columns, options);

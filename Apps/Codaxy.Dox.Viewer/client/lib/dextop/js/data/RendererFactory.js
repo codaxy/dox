@@ -1,44 +1,84 @@
 Ext.ns('Dextop.data');
 
 Ext.define('Dextop.data.RendererFactory', {
-	
+
 	statics: {
-		
-		defaultRenderer: function(value) { return value; }, 
-				
+
+		defaultRenderer: function (value) { return value; },
+
 		types: {
-			number: function(options) {
-				return Ext.util.Format.numberRenderer();
+			number: function (options) {
+				if (Ext.isString(options))
+					options = {
+						format: options
+					};
+				else
+					options = options || {};
+
+				if (!options.format && Ext.util.Format.decimalSeparator != '.') {
+					return function (value) {
+						var res = value || value === 0 ? value.toString() : '';
+						res = res.replace('.', Ext.util.Format.decimalSeparator);
+						return res;
+					}
+				}
+				return Ext.util.Format.numberRenderer(options.format);
 			},
-			tooltipTpl: function(options) {
-				var options = options || {};
+
+			time: function (options) {
+			    var format = options.format || Ext.form.field.Time.prototype.format || 'g:i A';
+			    return function (v) {
+			        if (!v)
+			            return v;
+			        return Ext.util.Format.date(v, format);
+			    }
+			},
+
+			date: function (options) {
+			    return Ext.util.Format.dateRenderer(options.format);
+			},
+
+			tpl: function (options) {
+			    var format = options.tpl || options.format;
+			    if (!format)
+			        return Dextop.data.RendererFactory.defaultRenderer;
+
+			    var tpl = new Ext.XTemplate(format);
+			    tpl.compile();			    
+			    return function (value, meta, record) {
+			        var v = tpl.apply(record.data) || '';
+			        return v;
+			    }
+			},
+
+			tooltipTpl: function (options) {
 				var tpl = new Ext.XTemplate(options.tooltipTpl);
 				tpl.compile();
 				var renderer = options.renderer || Dextop.data.RendererFactory.defaultRenderer;
-				return function(value, meta, record) {
-					var v = renderer(value, meta, record);
-					var ttip = tpl.apply(record.data);
-					if (ttip)
+				return function (value, meta, record) {
+					var v = renderer(value, meta, record) || '';
+					var ttip = tpl.apply(record.data) || '';
+					if (ttip && ttip != 'null')
 						return '<div data-qtip=\"' + ttip + '\">' + v + '</div>';
 					return v;
 				}
-			}			
+			}
 		},
-		
-		register: function(type, renderer) {
-			var f = function() { return renderer; };			
+
+		register: function (type, renderer) {
+			var f = function () { return renderer; };
 			Dextop.data.RendererFactory.types[type] = f;
 		},
-		
-		registerFactory: function(type, factoryMethod) {
+
+		registerFactory: function (type, factoryMethod) {
 			Dextop.data.RendererFactory.types[type] = factoryMethod;
 		},
-		
-		create: function(type, options) {
+
+		create: function (type, options) {
 			var f = Dextop.data.RendererFactory.types[type];
 			if (!f)
-				throw "Renderer type '"+type+"' not defined.";
+				throw "Renderer type '" + type + "' not defined.";
 			return f(options);
-		}		
-	}	
+		}
+	}
 });

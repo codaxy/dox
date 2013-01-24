@@ -1,2 +1,2 @@
-2012-01-31 15:43:12.797 Info : Loading book from file 'W:\Codaxy\SVN\codaxy-dox-readonly\Apps\Codaxy.Dox.Viewer\books\Sample Dox Book.dox'.
-2012-01-31 15:43:13.326 Info : Application started.
+2013-01-24 23:38:14.539 Info : Loading book from file 'W:\Code\GitHub\dox\Apps\Codaxy.Dox.Viewer\books\Sample Dox Book.dox'.
+2013-01-24 23:38:14.789 Info : Application started.

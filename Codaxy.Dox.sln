@@ -1,15 +1,19 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codaxy.Dox.Viewer", "Apps\Codaxy.Dox.Viewer\Codaxy.Dox.Viewer.csproj", "{C81AE380-4B54-42AF-B705-2605734173F1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codaxy.Dox.Core", "Libraries\Codaxy.Dox\Codaxy.Dox.Core\Codaxy.Dox.Core.csproj", "{A11C3365-AE33-401D-95B2-EE09C17A1D56}"
-EndProject
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dox", "Dox", "{85980970-A53F-4E03-BD3D-D97EB1739859}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Formatters", "Formatters", "{7D5CD249-1EC3-4915-9CEB-5714DF517C0D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Providers", "Providers", "{535AE67B-2411-438C-875D-653B19D4BD6F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{67528056-49CF-4EC5-B38A-BD543982C617}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{EEA37811-BD0F-4AE9-B8CC-540B6F0B5E78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codaxy.Dox.Viewer", "Apps\Codaxy.Dox.Viewer\Codaxy.Dox.Viewer.csproj", "{C81AE380-4B54-42AF-B705-2605734173F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codaxy.Dox.Core", "Libraries\Codaxy.Dox\Codaxy.Dox.Core\Codaxy.Dox.Core.csproj", "{A11C3365-AE33-401D-95B2-EE09C17A1D56}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codaxy.Dox.Engine", "Libraries\Codaxy.Dox\Codaxy.Dox.Engine\Codaxy.Dox.Engine.csproj", "{824D1A5F-9987-4916-9324-65CA2FB075BA}"
 EndProject
@@ -25,11 +29,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codaxy.Dox.Providers.SqlSer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codaxy.Dox.Providers.XmlComments", "Libraries\Codaxy.Dox\Codaxy.Dox.Providers.XmlComments\Codaxy.Dox.Providers.XmlComments.csproj", "{A258D188-1457-45FC-A890-609055B0DC5A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{67528056-49CF-4EC5-B38A-BD543982C617}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codaxy.Dox.DoxZipFile.Builder", "Tools\Codaxy.Dox.DoxZipFile.Builder\Codaxy.Dox.DoxZipFile.Builder.csproj", "{4AF89228-784B-4D97-B1F3-AF1B190925E2}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{EEA37811-BD0F-4AE9-B8CC-540B6F0B5E78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -146,9 +146,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A11C3365-AE33-401D-95B2-EE09C17A1D56} = {85980970-A53F-4E03-BD3D-D97EB1739859}
 		{7D5CD249-1EC3-4915-9CEB-5714DF517C0D} = {85980970-A53F-4E03-BD3D-D97EB1739859}
 		{535AE67B-2411-438C-875D-653B19D4BD6F} = {85980970-A53F-4E03-BD3D-D97EB1739859}
+		{A11C3365-AE33-401D-95B2-EE09C17A1D56} = {85980970-A53F-4E03-BD3D-D97EB1739859}
 		{824D1A5F-9987-4916-9324-65CA2FB075BA} = {85980970-A53F-4E03-BD3D-D97EB1739859}
 		{7F285F5E-B8B8-4E7E-9FE8-B81A13E16355} = {85980970-A53F-4E03-BD3D-D97EB1739859}
 		{71742E8A-522D-4EBC-8AC7-3876FDFE4F91} = {7D5CD249-1EC3-4915-9CEB-5714DF517C0D}

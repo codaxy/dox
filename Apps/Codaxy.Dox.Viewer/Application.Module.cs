@@ -28,7 +28,10 @@ namespace Codaxy.Dox.Viewer
                 "generated/",
                 "controls/",
                 "");
-            RegisterCss("client/lib/ext/resources/css/ext-all-gray.css");
+            
+            //RegisterCss("client/themes/resources/css/carbon/carbon.css");
+            //RegisterCss("client/themes/resources/css/azzurra/azzurra-core.css");
+            //RegisterCss("client/themes/resources/css/azzurra/azzurra-ui-all.css");
             RegisterCss("client/css/application.css");
             RegisterCss("client/css/dox.css");
         }

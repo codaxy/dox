@@ -33,11 +33,13 @@ namespace Codaxy.Dox.Viewer
 
         protected override void RegisterModules()
         {
-#if DEBUG
-            RegisterModule("client/lib/ext", new DextopExtJSModule { Debug = true });
-#else
-            RegisterModule("client/lib/ext", new DextopExtJSModule());
-#endif
+            RegisterModule("http://dextop.codaxy.com/ext/ext-4.1.1a/", new DextopExtJSModule
+            {
+                Debug = true,
+                UsingExternalResources = true,
+                SkipCss = false
+            });
+
             RegisterModule("client/lib/dextop", new DextopCoreModule());
             RegisterModule("", new ApplicationModule());
         }

@@ -1,67 +1,70 @@
-////http://www.sencha.com/forum/showthread.php?130332-ArrayReader-idProperty-bug&p=591598#post591598
+//http://www.sencha.com/forum/showthread.php?130332-ArrayReader-idProperty-bug&p=591598#post591598
 
-Ext.override(Ext.data.reader.Array, {
-	getIdProperty: function () {
-		var m = this.model.prototype;
-		var prop = Ext.isDefined(this.idProperty) ? this.idProperty : m.idProperty;		
+if (Ext.versions.extjs.version <= '4.0.7')  // NOTE: Appears to be fixed in Ext 4.1.0 beta 2
+{ 
+	Ext.override(Ext.data.reader.Array, {
+		getIdProperty: function () {
+			var m = this.model.prototype;
+			var prop = Ext.isDefined(this.idProperty) ? this.idProperty : m.idProperty;
 
-		if (typeof prop === 'string') {
-			//model uses string idProperty and array reader needs index...
-			var index = m.fields.indexOfKey(prop);
-			if (index == -1)
-				throw "Id property of the model '" + this.model.displayName + "' could not be found.";
-			prop = index;
+			if (typeof prop === 'string') {
+				//model uses string idProperty and array reader needs index...
+				var index = m.fields.indexOfKey(prop);
+				if (index == -1)
+					throw "Id property of the model '" + this.model.displayName + "' could not be found.";
+				prop = index;
+			}
+			return prop;
 		}
-		return prop;
-	}
-});
+	});
 
-Ext.override(Ext.data.reader.Reader, {
+	Ext.override(Ext.data.reader.Reader, {
 
-	buildExtractors: function(force) {
-        var me          = this,
-            idProp      = me.getIdProperty(),
-            totalProp   = me.totalProperty,
+		buildExtractors: function (force) {
+			var me = this,
+            idProp = me.getIdProperty(),
+            totalProp = me.totalProperty,
             successProp = me.successProperty,
             messageProp = me.messageProperty,
             accessor;
-            
-        if (force === true) {
-            delete me.extractorFunctions;
-        }
-        
-        if (me.extractorFunctions) {
-            return;
-        }   
 
-        //build the extractors for all the meta data
-        if (totalProp) {
-            me.getTotal = me.createAccessor(totalProp);
-        }
+			if (force === true) {
+				delete me.extractorFunctions;
+			}
 
-        if (successProp) {
-            me.getSuccess = me.createAccessor(successProp);
-        }
+			if (me.extractorFunctions) {
+				return;
+			}
 
-        if (messageProp) {
-            me.getMessage = me.createAccessor(messageProp);
-        }
+			//build the extractors for all the meta data
+			if (totalProp) {
+				me.getTotal = me.createAccessor(totalProp);
+			}
 
-        if (Ext.isDefined(idProp)) {
-            accessor = me.createAccessor(idProp);
+			if (successProp) {
+				me.getSuccess = me.createAccessor(successProp);
+			}
 
-            me.getId = function(record) {
-                var id = accessor.call(me, record);
-                return (id === undefined || id === '') ? null : id;
-            };
-        } else {
-            me.getId = function() {
-                return null;
-            };
-        }
-        me.buildFieldExtractors();
-    }
-});
+			if (messageProp) {
+				me.getMessage = me.createAccessor(messageProp);
+			}
+
+			if (Ext.isDefined(idProp)) {
+				accessor = me.createAccessor(idProp);
+
+				me.getId = function (record) {
+					var id = accessor.call(me, record);
+					return (id === undefined || id === '') ? null : id;
+				};
+			} else {
+				me.getId = function () {
+					return null;
+				};
+			}
+			me.buildFieldExtractors();
+		}
+	});
+}
 
 /// http://www.sencha.com/forum/showthread.php?131484-Ext.form.field.Checkbox-bug&p=595247#post595247
 Ext.override(Ext.form.field.Checkbox, {
@@ -173,3 +176,55 @@ Ext.override(Ext.data.AbstractStore, {
 		return me.proxy;
 	}
 });
+
+if (Ext.versions.extjs.version == '4.1.0')
+    Ext.override(Ext.panel.Panel, {
+        getKeyMap: function () {
+            if (!this.keyMap) {
+                this.keyMap = new Ext.KeyMap(this.el, this.keys);
+            }
+            return this.keyMap;
+        }
+    });
+
+if (Ext.versions.extjs.version == '4.1.1')
+    Ext.override(Ext.form.field.Time, {
+        syncSelection: function () {
+            var me = this,
+                picker = me.picker,
+                toSelect,
+                selModel,
+                value,
+                data, d, dLen, rec;
+
+            if (picker && !me.skipSync) {
+                picker.clearHighlight();
+                value = me.getValue();
+                selModel = picker.getSelectionModel();
+                // Update the selection to match
+                me.ignoreSelection++;
+                if (value === null) {
+                    selModel.deselectAll();
+                } else if (Ext.isDate(value)) {
+                    // find value, select it
+                    data = picker.store.data.items;
+                    dLen = data.length;
+
+                    for (d = 0; d < dLen; d++) {
+                        rec = data[d];
+
+                        if (Ext.Date.isEqual(rec.get('date'), value)) {
+                            toSelect = rec;
+                            break;
+                        }
+                    }
+
+                    if (toSelect)
+                        selModel.select(toSelect);
+                    else
+                        me.setRawValue(me.formatDate(value));
+                }
+                me.ignoreSelection--;
+            }
+        }
+    });

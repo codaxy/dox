@@ -7,6 +7,7 @@ using System.Web.Routing;
 using Codaxy.Common.Logging;
 using Codaxy.Dextop;
 using System.IO;
+using System.Threading;
 
 namespace Codaxy.Dox.Viewer
 {
@@ -52,6 +53,11 @@ namespace Codaxy.Dox.Viewer
             catch (Exception ex)
             {
                 logger.Exception("Application start error!", ex);
+                ThreadPool.QueueUserWorkItem(s =>
+                {
+                    Thread.Sleep(3000);
+                    HttpRuntime.UnloadAppDomain();
+                });
                 throw;
             }
         }

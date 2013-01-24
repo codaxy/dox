@@ -4,7 +4,9 @@ Ext.define('Dox.control.DoxViewerPanel', {
 	extend: 'Ext.tab.Panel',
 
 	title: false,
-	enableTabScroll: true,	
+	enableTabScroll: true,
+	plain: true,    
+    ui: 'orange-tab',
 	defaults: {
 		autoScroll: true
 	},
@@ -160,7 +162,7 @@ Ext.define('Dox.control.DoxViewerPanel', {
 					var index = url.lastIndexOf('.');
 					var title = (index == -1) ? '?' : url.substr(index+1);
 					this.add({
-						xtype: xtype,
+					    xtype: xtype,                        
 						url: url,
 						id: id,
 						html: html,

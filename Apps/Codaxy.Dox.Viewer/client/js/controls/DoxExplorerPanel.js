@@ -55,6 +55,7 @@ Ext.define('Dox.control.DoxExplorerPanel', {
 				triggerCls: 'x-form-clear-trigger',
 				enableKeyEvents: true,
 				explorerPanel: this,
+                flex: 1,
 				
 				onTriggerClick: function(e) {
 					this.setValue('');
