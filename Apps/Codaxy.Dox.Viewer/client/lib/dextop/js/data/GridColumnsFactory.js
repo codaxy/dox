@@ -54,11 +54,7 @@ Ext.define('Dextop.data.GridColumnsFactory', {
 				field: {
 					xtype: 'textfield'
 				},
-				renderer: function (v) {
-					if (!v)
-						return v;
-					return Ext.util.Format.date(v, (Ext.Date.defaultFormat || Ext.util.Format.dateFormat) + ' ' + (Ext.form.field.Time.prototype.format || 'g:i A'));
-				}
+				renderer: 'datetime'
 			},
 			'boolean': {
 				factory: function (c, options) {
@@ -74,10 +70,18 @@ Ext.define('Dextop.data.GridColumnsFactory', {
 				}
 			},
 			'lookup': {
-				factory: function (c, options) {
-					if (!options || !options.remote)
-						throw "Invalid lookup options specified.";
-					var store = options.remote.createStore(c.lookupId || c.dataIndex);
+				factory: function (c, options) {					
+					var store;
+					if (c.storeId) {
+					    store = Ext.getStore(c.storeId);
+					    if (!store.isLoading() && store.getCount() == 0)
+					        store.load();
+					}
+					else {
+					    if (!options || !options.remote)
+					        throw "Invalid lookup options specified.";
+					    store = options.remote.createStore(c.lookupId || c.dataIndex);
+					}
 					if (!c.readonly)
 						c.field = {
 							xtype: 'combo',

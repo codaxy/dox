@@ -78,7 +78,11 @@ Ext.define('Ext.ux.grid.plugin.ActionManager',{
 		if (action.setDisabled)
 			this.actions.push(action);
 		else if (typeof action === 'string')
-			this.actions.push(action);
+		    this.actions.push(action);
+		else if (action.xtype && action.xtype != 'button')
+		    this.actions.push(action = new Ext.widget(action.xtype, Ext.apply(action, {
+		        skipInContextMenu: true   
+		    })));		
 		else 
 			this.actions.push(action = new Ext.Action(action));
 			
@@ -132,10 +136,12 @@ Ext.define('Ext.ux.grid.plugin.ActionManager',{
 	getContextMenuActions: function() { 
 		var res = [];
 		for (var i = 0; i<this.actions.length; i++) {
-			if (this.actions[i] === '->')
-				res.push('-');
-			else
-				res.push(this.actions[i]);
+		    if (this.actions[i] === '->')
+		        res.push('-');
+		    else {
+		        if (!this.actions[i].skipInContextMenu)
+		            res.push(this.actions[i]);
+		    }
 		}
 		return res; 
 	}	

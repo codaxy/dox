@@ -62,7 +62,7 @@ Ext.define('Dextop.Session', {
 
 	extendExpiry: function () {
 		this.remote.ExtendSession(function (r) {
-			if (r.success === false && r.result && r.result.type === 'session')
+			if (r && r.success === false && r.result && r.result.type === 'session')
 				this.terminate();
 		}, this);
 	},
@@ -134,6 +134,22 @@ Ext.define('Dextop.Session', {
 				}]
 			}
 		});
+
+		if (config.apiUrl) {
+		    this.apiProvider = Ext.Direct.addProvider({
+		        id: 'rpc',
+		        url: config.apiUrl,
+		        type: "remoting",
+		        maxRetries: 0,
+		        priority: 0,
+		        "actions": {
+		            "DextopApi": [{
+		                "name": "invoke",
+		                "len": 4
+		            }]
+		        }
+		    });
+		}
 
 		this.fsProvider = Ext.Direct.addProvider({
 			id: 'form',

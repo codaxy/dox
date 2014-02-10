@@ -1,2 +1,2 @@
-2013-01-24 23:38:14.539 Info : Loading book from file 'W:\Code\GitHub\dox\Apps\Codaxy.Dox.Viewer\books\Sample Dox Book.dox'.
-2013-01-24 23:38:14.789 Info : Application started.
+2014-02-10 09:19:39.296 Info : Loading book from file 'W:\dox_books\Sample Dox Book.dox'.
+2014-02-10 09:19:39.753 Info : Application started.
