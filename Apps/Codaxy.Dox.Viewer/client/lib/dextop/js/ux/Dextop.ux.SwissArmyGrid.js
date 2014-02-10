@@ -3,6 +3,8 @@ Ext.define('Dextop.ux.SwissArmyGrid', {
 	alias: 'widget.swissarmygrid',
 
 	model: 'model', //Common name of store and column model as registered on the server side.
+	addText: 'Add Record',
+	editText: 'Edit Record',
 
 	editing: undefined, //One of the 'cell', 'row', 'form'	 
 	editingOptions: undefined, //special options to be passed to the editing plugin
@@ -24,6 +26,7 @@ Ext.define('Dextop.ux.SwissArmyGrid', {
 	confirmDeleteText: 'Are you sure you want to remove the selected records?',
 	pageSizeText: 'Size: ',
 	pageSizeSelect: false, //add page size combo to paging toolbar
+    pageSizeSelectOptions: undefined, //Additional options for page size plugin
 
 	defaultRowEditingOptions: {
 		removePhantomsOnCancel: true
@@ -33,21 +36,40 @@ Ext.define('Dextop.ux.SwissArmyGrid', {
 
 	initComponent: function () {
 
-		if (!this.remote)
-			throw 'Swiss grid panel requires remote object to be configured.';
+		//if (!this.remote)
+	    //	throw 'Swiss grid panel requires remote object to be configured.';
 
-		if (!this.store) {
-			this.store = this.remote.createStore(this.storeName || this.model, this.storeOptions);
+	    if (this.api)
+	        this.api = Dextop.api(this.api);
+
+	    if (!this.store) {
+	        if (this.remote)
+	            this.store = this.remote.createStore(this.storeName || this.model, this.storeOptions);
+	        else if (this.api)
+	            this.store = this.api.createStore(this.storeOptions);
+	        else
+	            throw 'Swiss army grid store could not be resolved. No api nor remote object is specified.';
+
 			delete this.storeOptions;
 		}
+
+		this.addEvents('newrecord');
 
 		this.columnModelOptions = this.columnModelOptions || {};
 		Ext.apply(this.columnModelOptions, {
 			remote: this.remote,
 			checkEditor: this.editing == 'cell'
 		});
-		this.columns = this.remote.createGridColumns(this.columnModelName || this.model, this.columnModelOptions);
-		delete this.columnModelOptions;
+
+		if (!this.columns) {
+            if (this.remote)
+                this.columns = this.remote.createGridColumns(this.columnModelName || this.model, this.columnModelOptions);
+            else if (this.api)
+                this.columns = this.api.createGridColumns(this.columnModelOptions);
+            else
+                throw 'Swiss army grid columns could not be resolved. No api nor remote object is specified.';
+		    delete this.columnModelOptions;
+		}
 
 		this.actionManager = Ext.create('Ext.ux.grid.plugin.ActionManager');
 		this.plugins = Ext.Array.from(this.plugins) || [];
@@ -65,10 +87,14 @@ Ext.define('Dextop.ux.SwissArmyGrid', {
 			this.pagingToolbarOptions = this.pagingToolbarOptions || {};
 			this.pagingToolbarOptions.items = Ext.Array.from(this.pagingToolbarOptions.items) || [];
 			if (this.pageSizeSelect) {
-				this.pagingToolbarOptions.items.push('-', this.pageSizeText, {
+			    var options = Ext.apply({}, this.pageSizeSelectOptions);
+			    if (typeof this.pageSizeSelect == 'object')
+			        Ext.apply(options, this.pageSizeSelect);
+
+				this.pagingToolbarOptions.items.push('-', this.pageSizeText, Ext.apply({
 					xtype: 'pagesizecombo',
 					store: this.store
-				});
+				}, options));
 			}
 			this.bbar = Ext.create('Ext.PagingToolbar', Ext.apply({
 				store: this.store
@@ -86,14 +112,14 @@ Ext.define('Dextop.ux.SwissArmyGrid', {
 		this.callParent();
 
 		if (this.editOnDblClick) {
-			this.mon(this, 'itemdblclick', function () {
-				this.editRecord();
-			}, this);
+		    this.mon(this, 'itemdblclick', function () {
+		        this.editRecord();
+		    }, this);
 		}
-	},
+	},    
 
 	getFirstEditorIndex: function () {
-		for (var i = 0; this.columns.length; i++)
+		for (var i = 0; i < this.columns.length; i++)
 			if (this.columns[i].field)
 				return i;
 	},
@@ -126,8 +152,14 @@ Ext.define('Dextop.ux.SwissArmyGrid', {
 		return Ext.create('Ext.grid.plugin.RowEditing', this.editingOptions);
 	},
 
+	getNewRecordData: function() {
+	    return {};
+	},
+
 	createNewRecord: function () {
-		return Ext.create(this.store.model, {});
+	    var data = this.getNewRecordData() || {};
+	    this.fireEvent('newrecord', this, data);
+		return Ext.create(this.store.model, data);
 	},
 
 	convertStringActions: function (actions) {
@@ -286,6 +318,8 @@ Ext.define('Dextop.ux.SwissArmyGrid', {
         if (!this.editingOptions.formItemsType)
             this.editingOptions.formItemsType = this.store.model.modelName.replace('.model.', '.form.');
         var formEditor = Ext.create('Dextop.ux.FormEditorWindow', Ext.apply({
+            title: insert ? this.addText : this.editText,
+            insert: insert,
             remote: this.remote,
             data: rec.data
         }, this.editingOptions));

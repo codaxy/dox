@@ -14,6 +14,9 @@ Ext.apply(Dextop, {
 	removeText: 'Remove',
 	reloadText: 'Reload',
 
+	virtualAppPath: '',
+
+
 	/* Shorthand for Ext.create(config.alias, config).
 	* config.alias is deleted before call is made
 	*/
@@ -25,6 +28,24 @@ Ext.apply(Dextop, {
 		var alias = config.alias;
 		delete config.alias;
 		return Ext.create(alias, config);
+	},
+
+	api: function (type, config) {
+	    if (!type)
+	        return null;
+
+	    if (typeof type == 'string') {
+	        var typeName = Ext.ClassManager.getNameByAlias('api.' + type) || type;
+	        return Ext.create(typeName, config);
+	    }
+
+	    if (type.createStore)
+	        return type; //already initialized
+
+	    if (!type.type)
+	        throw 'Cannot instantate api object as no type alias is specified!';
+
+	    return Dextop.api(type.type, type);
 	},
 
 	applyRecursive: function (o, c, defaults) {
@@ -44,7 +65,34 @@ Ext.apply(Dextop, {
 	},
 
 	alert: function (msg) {
-		Dextop.getSession().alert(msg);
+	    if (typeof msg === 'string')
+	        msg = {
+	            msg: msg
+	        };
+
+	    var alertDefaults = {
+	        info: {
+	            title: Dextop.infoText,
+	            icon: Ext.MessageBox.INFO,
+	            buttons: Ext.MessageBox.OK
+	        },
+	        warning: {
+	            title: Dextop.warningText,
+	            icon: Ext.MessageBox.WARNING,
+	            buttons: Ext.MessageBox.OK
+	        },
+	        error: {
+	            title: Dextop.errorText,
+	            icon: Ext.MessageBox.ERROR,
+	            buttons: Ext.MessageBox.OK
+	        }
+	    };
+
+	    Ext.applyIf(msg, alertDefaults[msg.type || 'info']);
+
+	    msg.msg = msg.msg || msg.message || msg.exception || msg.text;
+
+	    Ext.MessageBox.show(msg);
 	},
 
 	infoAlert: function (msg) {
@@ -78,8 +126,60 @@ Ext.apply(Dextop, {
 		return Dextop.Session.getInstance();
 	},
 
-	notify: function (n) {
-		Dextop.getSession().notify(n);
+	notify: function (msg) {
+
+	    if (typeof msg === 'string')
+	        msg = {
+	            type: 'info',
+	            msg: msg
+	        };
+
+	    var defaults = {
+	        info: {
+	            title: Dextop.infoText
+	        },
+	        warning: {
+	            title: Dextop.warningText
+	        },
+	        error: {
+	            title: Dextop.errorText
+	        }
+	    };
+
+	    Ext.applyIf(msg, defaults[msg.type]);
+
+	    msg.msg = msg.message = msg.msg || msg.message || msg.exception || msg.text;
+
+	    if (typeof Dextop.Logger[msg.type] === 'function') {
+	        Dextop.Logger[msg.type](msg.msg);
+	    }
+
+	    if (msg.sound) {
+	        if (msg.sound === true)
+	            Dextop.playSound(msg.type);
+	        else
+	            Dextop.playSound(msg.sound);
+	    }
+
+	    if (msg.alert)
+	        Dextop.alert(msg);
+	    else
+	        Dextop.displayPopupNotification(msg);
+	},
+
+	displayPopupNotification: function (notification) {
+	    var msg = '<div class="msg ' + notification.type + '"><h3>' + notification.title + '</h3><p>' + notification.message + '</p></div>';
+	    if (!this.msgCt) {
+	        this.msgCt = Ext.core.DomHelper.insertFirst(document.body, { id: 'msg-div' }, true);
+	    }
+	    var m = Ext.core.DomHelper.append(this.msgCt, msg, true);
+	    m.hide();
+	    m.slideIn('t').ghost("t", { delay: 4000, remove: true });
+	},
+
+    //virtual
+	playSound: function (sound) {
+
 	},
 
 	//Confirmations
@@ -131,7 +231,25 @@ Ext.apply(Dextop, {
 	},
 
 	absolutePath: function (path) {
-		return Dextop.getSession().getAbsolutePath(path);
+
+	    if (!Dextop.virtualAppPath) {
+	        Ext.each(Ext.DomQuery.select('link'), function (link) {
+	            var href = Ext.fly(link).getAttribute('href');
+	            var index = href.indexOf('client/lib/dextop/');
+	            if (index > 0) {
+	                Dextop.virtualAppPath = href.substring(0, index);
+	                return false;
+	            }
+	        });
+	    }
+
+	    if (!path)
+	        return path;
+	    if (path.indexOf(Dextop.virtualAppPath) == 0)
+	        return path;
+	    if (path.charAt(0) == '/')
+	        return Dextop.virtualAppPath + path.substring(1);
+	    return Dextop.virtualAppPath + path;
 	},
 
 	downloadAttachment: function (url) {
@@ -160,5 +278,12 @@ Ext.apply(Dextop, {
 		var c = Ext.ClassManager.get(className);
 		if (c && c.prototype)
 			Ext.apply(c.prototype, localizationData);
-	}	
+	},
+
+	getStore: function (storeId, options) {
+	    var store = Ext.getStore(storeId);
+	    if (options && options.autoLoad && !store.isLoading() && store.getCount() == 0)
+	        store.load();
+	    return store;
+	}
 });

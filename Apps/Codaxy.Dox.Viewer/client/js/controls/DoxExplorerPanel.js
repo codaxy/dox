@@ -28,9 +28,13 @@ Ext.define('Dox.control.DoxExplorerPanel', {
 				'itemclick': function(view, record, item, index, e) {
 					if (!record || !record.raw)
 						return;
-						
+					//alert('record is leaf : ' + record.isLeaf()+ ' json data : ' + JSON.stringify(record.raw));
 					e.stopEvent();
-						
+					if (record.raw.type === "document")
+					    this.viewport.loadDocument(record.raw.id);
+
+					
+						/*
 					switch (record.raw.type) {
 						case "document":
 							this.viewport.loadDocument(record.raw.id);
@@ -38,7 +42,7 @@ Ext.define('Dox.control.DoxExplorerPanel', {
 						default:
 							break;
 					}
-					
+					*/
 					if (!record.isLeaf()) {
 					    if (record.isExpanded()) {
 						    record.collapse(false);

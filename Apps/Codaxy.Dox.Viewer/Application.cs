@@ -7,6 +7,8 @@ using Codaxy.Dox.Engine;
 using Codaxy.Common.Logging;
 using System.IO;
 using Codaxy.Dextop.Data;
+using System.Diagnostics;
+using System.Web.Configuration;
 
 namespace Codaxy.Dox.Viewer
 {
@@ -33,7 +35,8 @@ namespace Codaxy.Dox.Viewer
 
         protected override void RegisterModules()
         {
-            RegisterModule("http://dextop.codaxy.com/ext/ext-4.1.1a/", new DextopExtJSModule
+            //http://dextop.codaxy.com/ext/ext-4.1.1a/
+            RegisterModule("http://dextop.codaxy.com/ext/ext-4.2.1/", new DextopExtJSModule
             {
                 Debug = true,
                 UsingExternalResources = true,
@@ -135,24 +138,52 @@ namespace Codaxy.Dox.Viewer
                     children = GetChapterSubTree(book, null)
                 });
             }
+            foreach (var book in nodes)
+                foreach (var chapter in book.children)
+                {
+                    StripDefaultChapter(chapter);
+                }
 
             System.IO.File.WriteAllText(DextopUtil.MapPath("~/client/js/generated/data.js"),
                 String.Format("Ext.namespace('Dox.Application'); Dox.Application.booksTree = {0};", DextopUtil.Encode(nodes)));            
         }
 
+        private void StripDefaultChapter(TreeNode father)
+        {
+            if (father != null && father.type == "chapter")
+            {
+                TreeNode[] children = father.children;
+                if (children != null && children.Count() == 1)
+                {
+                    TreeNode child = children[0];
+                    TreeNode[] childrenOfChildren = child.children;
+                    father.children = childrenOfChildren;
+                    father.text = father.text + "." + child.text;
+                    father.id = father.id + "." + child.text;
+                    children = childrenOfChildren;
+                }
+                if (children != null)
+                    foreach (var item in children)
+                    {
+                        StripDefaultChapter(item);
+                    }
+            }
+        }
+
         private TreeNode[] GetChapterSubTree(Engine.IDoxBook book, String chapterUrl)
         {
-            var chapterNodes = book.GetSubChaptersOf(chapterUrl).OrderBy(a => a.Title).Select(a =>
-                new TreeNode
-                {
-                    id = String.Format("{0}.{1}", book.Name, a.Url),
-                    text = System.Net.WebUtility.HtmlEncode(a.Title),
-                    iconCls = "chapter-node",
-                    children = GetChapterSubTree(book, a.Url),
-                    type = "chapter"
-                });
+            var chapters = book.GetSubChaptersOf(chapterUrl).OrderBy(a => a.Title);
+            IEnumerable<TreeNode> chapterNodes = chapters.Select(a =>
+                   new TreeNode
+                   {
+                       id = String.Format("{0}.{1}", book.Name, a.Url),
+                       text = System.Net.WebUtility.HtmlEncode(a.Title),
+                       iconCls = "chapter-node",
+                       children = GetChapterSubTree(book, a.Url),
+                       type = "chapter"
+                   });
 
-            var documentNodes = book.GetChapterDocumentsOf(chapterUrl).OrderBy(a => a.Title).Select(a =>
+            IEnumerable<TreeNode> documentNodes = book.GetChapterDocumentsOf(chapterUrl).OrderBy(a => a.Title).Select(a =>
                 new TreeNode
                 {
                     id = String.Format("{0}.{1}", book.Name, a.Url),
@@ -196,7 +227,16 @@ namespace Codaxy.Dox.Viewer
         {
             Library.Clear();
 
-            var booksDir = new DirectoryInfo(DextopUtil.MapPath("~/books"));
+            string bookDirectory = WebConfigurationManager.AppSettings["bookDirectory"];
+            DirectoryInfo booksDir = null;
+            if (bookDirectory == null)
+                booksDir = new DirectoryInfo(DextopUtil.MapPath("~/books"));
+            else
+            {
+                booksDir = new DirectoryInfo(bookDirectory.ToString());
+                if (!booksDir.Exists)
+                    booksDir = new DirectoryInfo(DextopUtil.MapPath("~/books"));
+            }
 
             foreach (var f in booksDir.GetFiles("*.dox"))
             {
